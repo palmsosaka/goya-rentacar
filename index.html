@@ -14,6 +14,10 @@
   <link rel="alternate" hreflang="ja" href="https://goya-rentacar.com/">
   <link rel="alternate" hreflang="en" href="https://goya-rentacar.com/en/">
 
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
@@ -26,8 +30,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=6">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css?v=7">
+  <script src="https://unpkg.com/lucide@0.460.0"></script>
 </head>
 <body>
   <a href="#main" class="skip-link">メインコンテンツへ</a>
@@ -36,8 +40,8 @@
   <header class="header">
     <div class="header__inner">
       <a href="/" class="header__logo">
-        <img src="images/logo-character.png" alt="" class="header__logo-character">
-        <img src="images/logo-text.png" alt="ゴーヤレンタカー" class="header__logo-text-img">
+        <img src="images/logo-character.webp" alt="" class="header__logo-character">
+        <img src="images/logo-text.webp" alt="ゴーヤレンタカー" class="header__logo-text-img">
       </a>
       <div class="header__actions">
         <div class="lang-switch">
@@ -69,44 +73,128 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero__slides">
-      <div class="hero__slide is-active" style="background-image:url('images/hero-beach.png')"></div>
-      <div class="hero__slide" style="background-image:url('images/hero-aquarium.png')"></div>
-      <div class="hero__slide" style="background-image:url('images/hero-shuri.png')"></div>
+      <div class="hero__slide is-active" style="background-image:url('images/hero-beach.webp')"></div>
+      <div class="hero__slide" style="background-image:url('images/hero-aquarium.webp')"></div>
+      <div class="hero__slide" style="background-image:url('images/hero-shuri.webp')"></div>
     </div>
     <div class="hero__overlay"></div>
     <div class="container hero__inner">
       <p class="hero__lead">那覇空港・ホテル送迎で</p>
       <h1 class="hero__title"><em>最短0分出発</em></h1>
       <p class="hero__lead">おかげさまで設立17年</p>
-      <p class="hero__sub">送迎を仕組み化しているから、少人数でもスムーズ。<br>補償プランが選べるから、総額が読める。安心と時短を重視する方へ。</p>
+      <p class="hero__sub">補償プランが選べて総額が明確。<br>送迎の仕組み化で待ち時間を最小化。</p>
       <div class="badges">
-        <span class="badge"><span class="badge__icon"><i data-lucide="zap"></i></span>最短0分出発体制</span>
-        <span class="badge"><span class="badge__icon"><i data-lucide="bus"></i></span>空港↔ホテル送迎</span>
+        <span class="badge"><span class="badge__icon"><i data-lucide="zap"></i></span>最短0分出発</span>
+        <span class="badge"><span class="badge__icon"><i data-lucide="bus"></i></span>空港・ホテル送迎</span>
         <span class="badge"><span class="badge__icon"><i data-lucide="shield-check"></i></span>補償プラン充実</span>
-        <span class="badge"><span class="badge__icon"><i data-lucide="award"></i></span>沖縄17年</span>
         <span class="badge"><span class="badge__icon"><i data-lucide="users"></i></span>7人乗りミニバン</span>
       </div>
       <div class="hero__cta">
-        <a href="#reservation" class="btn btn--web btn--lg" data-ga-event="hero_reservation_click">空き確認して予約（WEB）</a>
-        <a href="https://line.me/R/ti/p/@228tryuy" class="btn btn--outline btn--lg" data-ga-event="hero_line_click">旅程が未確定 → LINEで相談</a>
+        <a href="#reservation" class="btn btn--web btn--lg" data-ga-event="hero_reservation_click">今すぐ予約</a>
+        <a href="https://line.me/R/ti/p/@228tryuy" class="btn btn--outline btn--lg" data-ga-event="hero_line_click">LINEで相談</a>
       </div>
     </div>
   </section>
 
   <main id="main">
-    <!-- Reservation Calendar -->
-    <section class="reservation-embed" id="reservation">
+    <!-- Strengths -->
+    <section class="section">
       <div class="container">
-        <h2 class="reservation-embed__title">空き状況を確認して、そのまま予約</h2>
-        <div class="reservation-embed__frame">
-          <p>予約カレンダーをここに埋め込みます</p>
-          <p style="font-size:14px;color:var(--color-text-light)">（iFrame / JSウィジェット / 外部リンクのいずれかで実装）</p>
-          <div class="reservation-embed__fallback">
-            <a href="https://example.com/reservation" class="btn btn--web" data-ga-event="calendar_outbound_click">こちらから空き確認</a>
-            <p>お電話：<a href="tel:098-840-6584">098-840-6584</a></p>
-            <p><a href="https://line.me/R/ti/p/@228tryuy">LINEでの相談はこちら</a></p>
+        <div class="section__header">
+          <h2 class="section__title">ゴーヤレンタカーの強み</h2>
+          <p class="section__subtitle">安心と時短を両立するために</p>
+        </div>
+        <div class="cards-grid cards-grid--4">
+          <div class="card strength-card animate-on-scroll">
+            <div class="strength-card__icon"><i data-lucide="zap"></i></div>
+            <h3 class="strength-card__title">待たせない</h3>
+            <p class="strength-card__text">最短「待ち時間0分」で出発できる体制。送迎オペの統制で少人数でもスムーズ。</p>
+          </div>
+          <div class="card strength-card animate-on-scroll">
+            <div class="strength-card__icon"><i data-lucide="bus"></i></div>
+            <h3 class="strength-card__title">送迎が仕組み化</h3>
+            <p class="strength-card__text">空港↔ホテル / 空港↔店舗の統制運用。到着後の流れが明確で安心です。</p>
+          </div>
+          <div class="card strength-card animate-on-scroll">
+            <div class="strength-card__icon"><i data-lucide="shield-check"></i></div>
+            <h3 class="strength-card__title">補償が明朗</h3>
+            <p class="strength-card__text">補償プランが充実・選べるため、総額の不安を減らせます。明朗会計を心がけています。</p>
+          </div>
+          <div class="card strength-card animate-on-scroll">
+            <div class="strength-card__icon"><i data-lucide="award"></i></div>
+            <h3 class="strength-card__title">沖縄17年の実績</h3>
+            <p class="strength-card__text">17年の実績と信頼。継続的な運用品質の証拠として、安心してお選びいただけます。</p>
           </div>
         </div>
+        <p class="text-center" style="margin-top:var(--sp-xl)"><a href="/strengths.html" class="btn btn--ghost">強みをもっと見る</a></p>
+      </div>
+    </section>
+
+    <!-- Cars -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">おすすめ車種</h2>
+          <p class="section__subtitle">用途に合わせてお選びいただけます</p>
+        </div>
+        <div class="cards-grid cards-grid--3">
+          <div class="card animate-on-scroll">
+            <div class="card__image img-placeholder">軽自動車写真</div>
+            <div class="card__body">
+              <span class="card__tag">4名乗り</span>
+              <h3 class="card__title">軽自動車</h3>
+              <p class="card__text">スズキハスラー（HV）・パレット等。燃費抜群でリーズナブル。少人数の観光に。</p>
+              <p class="card__price"><strong>1,350円〜<small>/日</small></strong></p>
+            </div>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card__image img-placeholder">コンパクトカー写真</div>
+            <div class="card__body">
+              <span class="card__tag">5名乗り</span>
+              <h3 class="card__title">コンパクトカー</h3>
+              <p class="card__text">ホンダフィット・日産ノート等。全車禁煙。市街地の取り回しも楽々。</p>
+              <p class="card__price"><strong>2,350円〜<small>/日</small></strong></p>
+            </div>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card__image img-placeholder">ミニバン・SUV写真</div>
+            <div class="card__body">
+              <span class="card__tag">7〜8名乗り</span>
+              <h3 class="card__title">ミニバン・SUV</h3>
+              <p class="card__text">ホンダフリード・ノア・セレナ・トヨタハリアー（HV）等。家族旅行やグループに最適。</p>
+              <p class="card__price"><strong>4,350円〜<small>/日</small></strong></p>
+            </div>
+          </div>
+        </div>
+        <p class="text-center" style="margin-top:var(--sp-xl)"><a href="/cars.html" class="btn btn--ghost">車種一覧を見る</a></p>
+      </div>
+    </section>
+
+    <!-- Price Example -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="section__header">
+          <h2 class="section__title">料金例（総額）</h2>
+          <p class="section__subtitle">基本料金+補償+オプション込みの総額イメージ</p>
+        </div>
+        <div class="cards-grid cards-grid--3">
+          <div class="price-example animate-on-scroll">
+            <div class="price-example__label">軽自動車 2泊3日</div>
+            <div class="price-example__amount">¥4,050〜</div>
+            <div class="price-example__note">※補償プラン・時期により異なります</div>
+          </div>
+          <div class="price-example animate-on-scroll">
+            <div class="price-example__label">コンパクトカー 2泊3日</div>
+            <div class="price-example__amount">¥7,050〜</div>
+            <div class="price-example__note">※補償プラン・時期により異なります</div>
+          </div>
+          <div class="price-example animate-on-scroll">
+            <div class="price-example__label">ミニバン・SUV 2泊3日</div>
+            <div class="price-example__amount">¥13,050〜</div>
+            <div class="price-example__note">※補償プラン・時期により異なります</div>
+          </div>
+        </div>
+        <p class="text-center" style="margin-top:var(--sp-xl)"><a href="/price.html" class="btn btn--ghost">料金表を見る</a></p>
       </div>
     </section>
 
@@ -150,41 +238,8 @@
       </div>
     </section>
 
-    <!-- Strengths -->
-    <section class="section">
-      <div class="container">
-        <div class="section__header">
-          <h2 class="section__title">ゴーヤレンタカーの強み</h2>
-          <p class="section__subtitle">安心と時短を両立するために</p>
-        </div>
-        <div class="cards-grid cards-grid--4">
-          <div class="card strength-card animate-on-scroll">
-            <div class="strength-card__icon"><i data-lucide="zap"></i></div>
-            <h3 class="strength-card__title">待たせない</h3>
-            <p class="strength-card__text">最短「待ち時間0分」で出発できる体制。送迎オペの統制により、少人数でもスムーズ。</p>
-          </div>
-          <div class="card strength-card animate-on-scroll">
-            <div class="strength-card__icon"><i data-lucide="bus"></i></div>
-            <h3 class="strength-card__title">送迎が仕組み化</h3>
-            <p class="strength-card__text">空港↔ホテル / 空港↔店舗の統制運用。到着後の流れが明確で安心です。</p>
-          </div>
-          <div class="card strength-card animate-on-scroll">
-            <div class="strength-card__icon"><i data-lucide="shield-check"></i></div>
-            <h3 class="strength-card__title">補償が明朗</h3>
-            <p class="strength-card__text">補償プランが充実・選べるため、総額の不安を減らせます。明朗会計を心がけています。</p>
-          </div>
-          <div class="card strength-card animate-on-scroll">
-            <div class="strength-card__icon"><i data-lucide="award"></i></div>
-            <h3 class="strength-card__title">沖縄17年</h3>
-            <p class="strength-card__text">16年の実績と信頼。継続・運用品質の証拠として、安心してお選びいただけます。</p>
-          </div>
-        </div>
-        <p class="text-center" style="margin-top:var(--sp-xl)"><a href="/strengths.html" class="btn btn--ghost">強みをもっと見る</a></p>
-      </div>
-    </section>
-
     <!-- Insurance Plans -->
-    <section class="section section--alt">
+    <section class="section">
       <div class="container">
         <div class="section__header">
           <h2 class="section__title">補償プラン</h2>
@@ -194,7 +249,6 @@
           <div class="plan-card animate-on-scroll">
             <div class="plan-card__header">
               <div class="plan-card__name">スタンダード</div>
-              <div class="plan-card__price">¥X,XXX/日</div>
             </div>
             <div class="plan-card__body">
               <ul class="plan-card__features">
@@ -206,9 +260,9 @@
             </div>
           </div>
           <div class="plan-card plan-card--recommended animate-on-scroll">
+            <div class="plan-card__badge">おすすめ</div>
             <div class="plan-card__header">
-              <div class="plan-card__name">フルカバー（人気）</div>
-              <div class="plan-card__price">¥X,XXX/日</div>
+              <div class="plan-card__name">フルカバー</div>
             </div>
             <div class="plan-card__body">
               <ul class="plan-card__features">
@@ -222,7 +276,6 @@
           <div class="plan-card animate-on-scroll">
             <div class="plan-card__header">
               <div class="plan-card__name">エコノミー</div>
-              <div class="plan-card__price">¥XXX/日</div>
             </div>
             <div class="plan-card__body">
               <ul class="plan-card__features">
@@ -234,75 +287,44 @@
             </div>
           </div>
         </div>
-        <p class="text-center" style="margin-top:var(--sp-xl)"><a href="/insurance.html" class="btn btn--ghost">補償プラン詳細</a></p>
+        <p class="text-center" style="margin-top:var(--sp-md);color:var(--color-text-light);font-size:var(--fs-sm)">※料金はご利用車種・期間により異なります。お気軽にお問い合わせください。</p>
+        <p class="text-center" style="margin-top:var(--sp-md)"><a href="/insurance.html" class="btn btn--ghost">補償プラン詳細</a></p>
       </div>
     </section>
 
-    <!-- Cars -->
-    <section class="section">
+    <!-- Reviews -->
+    <section class="section section--alt">
       <div class="container">
         <div class="section__header">
-          <h2 class="section__title">おすすめ車種</h2>
-          <p class="section__subtitle">用途に合わせてお選びいただけます</p>
+          <h2 class="section__title">お客様の声</h2>
+          <p class="section__subtitle">ご利用いただいたお客様から</p>
         </div>
         <div class="cards-grid cards-grid--3">
-          <div class="card animate-on-scroll">
-            <div class="card__image img-placeholder">軽自動車写真</div>
-            <div class="card__body">
-              <span class="card__tag">4名乗り</span>
-              <h3 class="card__title">軽自動車</h3>
-              <p class="card__text">スズキハスラー（HV）・パレット等。燃費抜群でリーズナブル。少人数の観光に。</p>
-              <p class="card__price"><strong>1,350円〜/日</strong></p>
+          <div class="review-card animate-on-scroll">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">「空港からの送迎がとてもスムーズでした。到着連絡後すぐに迎えに来てくれて、待ち時間ほぼゼロ。家族旅行で利用しましたが、ミニバンも綺麗で大満足です。」</p>
+            <div class="review-card__author">
+              <span class="review-card__name">T.S. 様</span>
+              <span class="review-card__meta">家族旅行・ミニバン利用</span>
             </div>
           </div>
-          <div class="card animate-on-scroll">
-            <div class="card__image img-placeholder">コンパクトカー写真</div>
-            <div class="card__body">
-              <span class="card__tag">5名乗り</span>
-              <h3 class="card__title">コンパクトカー</h3>
-              <p class="card__text">ホンダフィット・日産ノート等。全車禁煙。市街地の取り回しも楽々。</p>
-              <p class="card__price"><strong>2,350円〜/日</strong></p>
+          <div class="review-card animate-on-scroll">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">「補償プランが分かりやすく、総額が事前に把握できたのが良かったです。初めての沖縄レンタカーでしたが、安心して利用できました。」</p>
+            <div class="review-card__author">
+              <span class="review-card__name">M.K. 様</span>
+              <span class="review-card__meta">カップル旅行・コンパクトカー利用</span>
             </div>
           </div>
-          <div class="card animate-on-scroll">
-            <div class="card__image img-placeholder">ミニバン・SUV写真</div>
-            <div class="card__body">
-              <span class="card__tag">7〜8名乗り</span>
-              <h3 class="card__title">ミニバン・SUV</h3>
-              <p class="card__text">日産フリード・ノア・セレナ・トヨタハリアー（HV）等。家族旅行やグループに最適。</p>
-              <p class="card__price"><strong>4,350円〜/日</strong></p>
+          <div class="review-card animate-on-scroll">
+            <div class="review-card__stars">★★★★☆</div>
+            <p class="review-card__text">「料金がリーズナブルで驚きました。軽自動車でしたが十分な広さ。スタッフの方も親切で、返却もスムーズでした。次回も利用します。」</p>
+            <div class="review-card__author">
+              <span class="review-card__name">A.Y. 様</span>
+              <span class="review-card__meta">一人旅・軽自動車利用</span>
             </div>
           </div>
         </div>
-        <p class="text-center" style="margin-top:var(--sp-xl)"><a href="/cars.html" class="btn btn--ghost">車種一覧を見る</a></p>
-      </div>
-    </section>
-
-    <!-- Price Example -->
-    <section class="section section--alt">
-      <div class="container container--narrow">
-        <div class="section__header">
-          <h2 class="section__title">料金例（総額）</h2>
-          <p class="section__subtitle">基本料金+補償+オプション込みの総額イメージ</p>
-        </div>
-        <div class="cards-grid cards-grid--3">
-          <div class="price-example animate-on-scroll">
-            <div class="price-example__label">軽自動車 2泊3日</div>
-            <div class="price-example__amount">¥4,050〜</div>
-            <div class="price-example__note">※補償プラン・時期により異なります</div>
-          </div>
-          <div class="price-example animate-on-scroll">
-            <div class="price-example__label">コンパクトカー 2泊3日</div>
-            <div class="price-example__amount">¥7,050〜</div>
-            <div class="price-example__note">※補償プラン・時期により異なります</div>
-          </div>
-          <div class="price-example animate-on-scroll">
-            <div class="price-example__label">ミニバン・SUV 2泊3日</div>
-            <div class="price-example__amount">¥13,050〜</div>
-            <div class="price-example__note">※補償プラン・時期により異なります</div>
-          </div>
-        </div>
-        <p class="text-center" style="margin-top:var(--sp-xl)"><a href="/price.html" class="btn btn--ghost">料金表を見る</a></p>
       </div>
     </section>
 
@@ -366,16 +388,32 @@
       </div>
     </section>
 
+    <!-- Reservation Calendar -->
+    <section class="reservation-embed section--alt" id="reservation">
+      <div class="container">
+        <h2 class="reservation-embed__title">空き状況を確認して、そのまま予約</h2>
+        <div class="reservation-embed__frame">
+          <p>予約カレンダーをここに埋め込みます</p>
+          <p style="font-size:14px;color:var(--color-text-light)">（iFrame / JSウィジェット / 外部リンクのいずれかで実装）</p>
+          <div class="reservation-embed__fallback">
+            <a href="https://example.com/reservation" class="btn btn--web" data-ga-event="calendar_outbound_click">こちらから空き確認</a>
+            <p>お電話：<a href="tel:098-840-6584">098-840-6584</a></p>
+            <p><a href="https://line.me/R/ti/p/@228tryuy">LINEでの相談はこちら</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="container">
         <h2 class="cta-section__title">今すぐ予約・相談</h2>
         <p class="cta-section__text">沖縄17年の安心レンタカー。お気軽にお問い合わせください。</p>
         <div class="cta-section__buttons">
-          <a href="#reservation" class="btn btn--web btn--lg" data-ga-event="cta_reservation_click">空き確認して予約（WEB）</a>
+          <a href="#reservation" class="btn btn--web btn--lg" data-ga-event="cta_reservation_click">今すぐ予約</a>
           <a href="https://line.me/R/ti/p/@228tryuy" class="btn btn--outline btn--lg" data-ga-event="cta_line_click">LINEで相談</a>
         </div>
-        <p style="margin-top:var(--sp-lg);opacity:.8">お電話：<a href="tel:098-840-6584" style="color:#fff;font-weight:700">098-840-6584</a></p>
+        <p style="margin-top:var(--sp-lg);opacity:.8">お電話：<a href="tel:098-840-6584" style="color:#fff;font-weight:700">098-840-6584</a>（9:00〜18:00）</p>
       </div>
     </section>
   </main>
@@ -386,8 +424,8 @@
       <div class="footer__grid">
         <div>
           <div class="footer__logo">
-            <img src="images/logo-character.png" alt="" class="footer__logo-character">
-            <img src="images/logo-text.png" alt="ゴーヤレンタカー" class="footer__logo-text-img">
+            <img src="images/logo-character.webp" alt="" class="footer__logo-character" loading="lazy">
+            <img src="images/logo-text.webp" alt="ゴーヤレンタカー" class="footer__logo-text-img" loading="lazy">
           </div>
           <p class="footer__desc">沖縄17年のレンタカー。<br>安心と時短を重視する方へ。</p>
         </div>
