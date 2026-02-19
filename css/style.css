@@ -116,8 +116,11 @@ table{border-collapse:collapse}
 .hero__overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(12,27,42,.7) 0%,rgba(0,119,182,.5) 50%,rgba(0,168,232,.3) 100%);pointer-events:none}
 .hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:80px;z-index:2;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80' preserveAspectRatio='none'%3E%3Cpath d='M0,60 C360,0 720,80 1080,30 C1260,5 1380,40 1440,60 L1440,80 L0,80 Z' fill='%23ffffff'/%3E%3C/svg%3E") no-repeat bottom/100% 100%}
 .hero__inner{position:relative;z-index:3;max-width:720px}
-.hero__title{font-size:var(--fs-2xl);font-weight:700;line-height:1.5;margin-bottom:var(--sp-lg);text-shadow:0 2px 16px rgba(0,0,0,.4)}
+.hero__lead{font-size:var(--fs-lg);font-weight:500;line-height:1.6;text-shadow:0 2px 12px rgba(0,0,0,.4);margin-bottom:var(--sp-xs)}
+.hero__title{font-size:3rem;font-weight:900;line-height:1.2;margin-bottom:var(--sp-sm);text-shadow:0 2px 16px rgba(0,0,0,.4);white-space:nowrap}
 .hero__title em{font-style:normal;color:#FFD166;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.hero__lead+.hero__title{margin-top:0}
+.hero__title+.hero__lead{margin-bottom:var(--sp-lg)}
 .hero__sub{font-size:var(--fs-base);opacity:.95;margin-bottom:var(--sp-xl);line-height:1.8;text-shadow:0 1px 8px rgba(0,0,0,.3)}
 .badges{display:flex;flex-wrap:wrap;gap:var(--sp-sm);margin-bottom:var(--sp-xl)}
 .badge{display:inline-flex;align-items:center;gap:6px;padding:6px var(--sp-md);background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:100px;font-size:var(--fs-sm);font-weight:500;white-space:nowrap;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
@@ -336,13 +339,15 @@ table{border-collapse:collapse}
 
 /* Responsive Typography */
 @media(min-width:640px){
-  .hero__title{font-size:var(--fs-3xl)}
+  .hero__title{font-size:4rem}
+  .hero__lead{font-size:var(--fs-xl)}
   .section__title{font-size:var(--fs-3xl)}
   .page-header__title{font-size:var(--fs-3xl)}
 }
 @media(min-width:1024px){
   .hero{padding:var(--sp-4xl) 0 calc(var(--sp-4xl) + 40px);min-height:600px}
-  .hero__title{font-size:var(--fs-5xl)}
+  .hero__title{font-size:5.5rem}
+  .hero__lead{font-size:var(--fs-2xl)}
   .hero__cta{flex-direction:row}
   .section{padding:var(--sp-4xl) 0}
   .container{padding:0 var(--sp-xl)}

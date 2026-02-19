@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="css/style.css?v=5">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -67,36 +67,100 @@
     <section class="section">
       <div class="container">
         <div class="cards-grid cards-grid--2">
-          <div class="card animate-on-scroll" id="compact">
-            <div class="card__image img-placeholder">コンパクトカー写真</div>
+          <div class="card animate-on-scroll" id="kei">
+            <div class="card__image img-placeholder">軽自動車写真</div>
             <div class="card__body">
-              <span class="card__tag">2〜3名</span>
-              <h2 class="card__title">コンパクトカー</h2>
-              <p class="card__text">2〜3名での旅行に最適。軽量で燃費が良く、沖縄の観光地を効率的に回れます。</p>
+              <span class="card__tag">4名乗り</span>
+              <h2 class="card__title">軽自動車</h2>
+              <p class="card__text">燃費抜群でリーズナブル。沖縄観光の定番カテゴリ。</p>
+              <p class="card__text" style="font-size:0.85em;color:var(--color-text-muted)">スズキハスラー（ハイブリッド）・パレット 等</p>
               <ul class="checklist" style="margin-top:var(--sp-md)">
-                <li>エアコン</li>
-                <li>ナビゲーション</li>
-                <li>ETC</li>
+                <li>カーナビ標準装備</li>
+                <li>ETC車載器標準装備</li>
+                <li>禁煙車あり</li>
               </ul>
-              <a href="/#reservation" class="btn btn--web btn--sm" style="margin-top:var(--sp-md)" data-ga-event="car_compact_reserve">予約する</a>
+              <p style="margin-top:var(--sp-md);font-weight:700;font-size:1.05em">1,350円〜/日</p>
+              <a href="/#reservation" class="btn btn--web btn--sm" style="margin-top:var(--sp-md)" data-ga-event="car_kei_reserve">予約する</a>
             </div>
           </div>
-          <div class="card animate-on-scroll" id="minivan">
-            <div class="card__image img-placeholder">7人乗りミニバン写真</div>
+          <div class="card animate-on-scroll" id="fit">
+            <div class="card__image img-placeholder">ホンダフィット写真</div>
             <div class="card__body">
-              <span class="card__tag">家族・グループ</span>
-              <h2 class="card__title">7人乗りミニバン</h2>
-              <p class="card__text">家族旅行やグループ旅行に最適。大型荷室で、スーツケースやゴルフバッグも余裕で収納できます。</p>
+              <span class="card__tag">5名乗り</span>
+              <h2 class="card__title">コンパクトカー（禁煙車）</h2>
+              <p class="card__text">市街地の取り回し楽々。禁煙車でいつも清潔。</p>
+              <p class="card__text" style="font-size:0.85em;color:var(--color-text-muted)">ホンダフィット（禁煙車）</p>
               <ul class="checklist" style="margin-top:var(--sp-md)">
-                <li>エアコン</li>
-                <li>ナビゲーション</li>
-                <li>ETC</li>
+                <li>カーナビ標準装備</li>
+                <li>ETC車載器標準装備</li>
+                <li>禁煙車</li>
+              </ul>
+              <p style="margin-top:var(--sp-md);font-weight:700;font-size:1.05em">2,350円〜/日</p>
+              <a href="/#reservation" class="btn btn--web btn--sm" style="margin-top:var(--sp-md)" data-ga-event="car_fit_reserve">予約する</a>
+            </div>
+          </div>
+          <div class="card animate-on-scroll" id="note">
+            <div class="card__image img-placeholder">日産ノート写真</div>
+            <div class="card__body">
+              <span class="card__tag">5名乗り</span>
+              <h2 class="card__title">コンパクトカー</h2>
+              <p class="card__text">燃費良好。沖縄の観光地を効率よく回れるコンパクトサイズ。</p>
+              <p class="card__text" style="font-size:0.85em;color:var(--color-text-muted)">日産ノート</p>
+              <ul class="checklist" style="margin-top:var(--sp-md)">
+                <li>カーナビ標準装備</li>
+                <li>ETC車載器標準装備</li>
+              </ul>
+              <p style="margin-top:var(--sp-md);font-weight:700;font-size:1.05em">2,350円〜/日</p>
+              <a href="/#reservation" class="btn btn--web btn--sm" style="margin-top:var(--sp-md)" data-ga-event="car_note_reserve">予約する</a>
+            </div>
+          </div>
+          <div class="card animate-on-scroll" id="freed">
+            <div class="card__image img-placeholder">日産フリード写真</div>
+            <div class="card__body">
+              <span class="card__tag">7名乗り・ファミリー向け</span>
+              <h2 class="card__title">ミニバン（禁煙車）</h2>
+              <p class="card__text">ファミリー旅行にぴったり。広い車内でお子様連れも快適。</p>
+              <p class="card__text" style="font-size:0.85em;color:var(--color-text-muted)">日産フリード（禁煙車）</p>
+              <ul class="checklist" style="margin-top:var(--sp-md)">
+                <li>カーナビ標準装備</li>
+                <li>ETC車載器標準装備</li>
+                <li>禁煙車</li>
                 <li>チャイルドシート対応</li>
               </ul>
-              <div style="display:flex;gap:var(--sp-sm);margin-top:var(--sp-md)">
-                <a href="/#reservation" class="btn btn--web btn--sm" data-ga-event="car_minivan_reserve">予約する</a>
-                <a href="/lp/minivan-7.html" class="btn btn--ghost btn--sm">詳細を見る</a>
-              </div>
+              <a href="/#reservation" class="btn btn--web btn--sm" style="margin-top:var(--sp-md)" data-ga-event="car_freed_reserve">予約する</a>
+            </div>
+          </div>
+          <div class="card animate-on-scroll" id="wagon">
+            <div class="card__image img-placeholder">ワゴン写真</div>
+            <div class="card__body">
+              <span class="card__tag">8名乗り</span>
+              <h2 class="card__title">ワゴン</h2>
+              <p class="card__text">大人数・荷物多めの旅行に最適。ゆったりした空間でグループ旅行を満喫。</p>
+              <p class="card__text" style="font-size:0.85em;color:var(--color-text-muted)">トヨタノア・ホンダステップワゴン・日産セレナ 等</p>
+              <ul class="checklist" style="margin-top:var(--sp-md)">
+                <li>カーナビ標準装備</li>
+                <li>ETC車載器標準装備</li>
+                <li>チャイルドシート対応</li>
+              </ul>
+              <p style="margin-top:var(--sp-md);font-weight:700;font-size:1.05em">4,350円〜/日</p>
+              <a href="/#reservation" class="btn btn--web btn--sm" style="margin-top:var(--sp-md)" data-ga-event="car_wagon_reserve">予約する</a>
+            </div>
+          </div>
+          <div class="card animate-on-scroll" id="suv">
+            <div class="card__image img-placeholder">SUV写真</div>
+            <div class="card__body">
+              <span class="card__tag">5名乗り</span>
+              <h2 class="card__title">SUV（ハイブリッド・禁煙車）</h2>
+              <p class="card__text">快適なドライブに。ハイブリッドで低燃費、禁煙車で清潔感も抜群。</p>
+              <p class="card__text" style="font-size:0.85em;color:var(--color-text-muted)">トヨタハリアー（ハイブリッド・禁煙車）</p>
+              <ul class="checklist" style="margin-top:var(--sp-md)">
+                <li>カーナビ標準装備</li>
+                <li>ETC車載器標準装備</li>
+                <li>ハイブリッド</li>
+                <li>禁煙車</li>
+              </ul>
+              <p style="margin-top:var(--sp-md);font-weight:700;font-size:1.05em">4,350円〜/日</p>
+              <a href="/#reservation" class="btn btn--web btn--sm" style="margin-top:var(--sp-md)" data-ga-event="car_suv_reserve">予約する</a>
             </div>
           </div>
         </div>
@@ -106,23 +170,23 @@
     <section class="section section--alt">
       <div class="container">
         <div class="section__header">
-          <h2 class="section__title">オプション</h2>
+          <h2 class="section__title">全車両共通のご案内</h2>
         </div>
         <div class="cards-grid cards-grid--3">
           <div class="card strength-card animate-on-scroll">
-            <div class="strength-card__icon"><i data-lucide="baby"></i></div>
-            <h3 class="strength-card__title">チャイルドシート</h3>
-            <p class="strength-card__text">幼児用・学童用チャイルドシートをご用意。お子様連れの旅行も安心です。</p>
+            <div class="strength-card__icon"><i data-lucide="wind"></i></div>
+            <h3 class="strength-card__title">全車禁煙車あり・除菌処理済み</h3>
+            <p class="strength-card__text">全車禁煙車をご用意。さらに全車両に空気触媒除菌処理を実施済みで、いつも清潔な環境でご乗車いただけます。</p>
           </div>
           <div class="card strength-card animate-on-scroll">
             <div class="strength-card__icon"><i data-lucide="map"></i></div>
-            <h3 class="strength-card__title">ナビゲーション</h3>
-            <p class="strength-card__text">全車種にナビゲーションを標準装備。沖縄の観光地へのルート案内も安心。</p>
+            <h3 class="strength-card__title">カーナビ・ETC標準装備</h3>
+            <p class="strength-card__text">全車にカーナビゲーションおよびETC車載器を標準装備。高速道路もスムーズに、沖縄観光を快適に楽しめます。</p>
           </div>
           <div class="card strength-card animate-on-scroll">
-            <div class="strength-card__icon"><i data-lucide="road"></i></div>
-            <h3 class="strength-card__title">ETC</h3>
-            <p class="strength-card__text">ETCを標準装備。高速道路の利用もスムーズです。</p>
+            <div class="strength-card__icon"><i data-lucide="baby"></i></div>
+            <h3 class="strength-card__title">チャイルドシート各種対応</h3>
+            <p class="strength-card__text">チャイルドシート・ジュニアシート・ベビーシートをご用意。お子様の年齢・体格に合わせてお選びいただけます。</p>
           </div>
         </div>
       </div>
@@ -131,7 +195,7 @@
     <section class="cta-section">
       <div class="container">
         <h2 class="cta-section__title">今すぐ予約・相談</h2>
-        <p class="cta-section__text">沖縄16年目の安心レンタカー。お気軽にお問い合わせください。</p>
+        <p class="cta-section__text">沖縄17年の安心レンタカー。お気軽にお問い合わせください。</p>
         <div class="cta-section__buttons">
           <a href="/#reservation" class="btn btn--web btn--lg" data-ga-event="cta_reservation_click">空き確認して予約（WEB）</a>
           <a href="https://line.me/R/ti/p/@goya-rentacar" class="btn btn--outline btn--lg" data-ga-event="cta_line_click">LINEで相談</a>
@@ -148,7 +212,7 @@
             <img src="images/logo-character.png" alt="" class="footer__logo-character">
             <img src="images/logo-text.png" alt="ゴーヤレンタカー" class="footer__logo-text-img">
           </div>
-          <p class="footer__desc">沖縄16年目のレンタカー。<br>安心と時短を重視する方へ。</p>
+          <p class="footer__desc">沖縄17年のレンタカー。<br>安心と時短を重視する方へ。</p>
         </div>
         <div>
           <h3 class="footer__heading">メニュー</h3>
@@ -164,7 +228,7 @@
         <div>
           <h3 class="footer__heading">お問い合わせ</h3>
           <ul class="footer__list">
-            <li><a href="tel:098-XXX-XXXX">電話：098-XXX-XXXX</a></li>
+            <li><a href="tel:098-840-6584">電話：098-840-6584</a></li>
             <li><a href="https://line.me/R/ti/p/@goya-rentacar">LINE相談</a></li>
             <li><a href="/access.html">店舗情報・アクセス</a></li>
             <li><a href="/company.html">会社情報</a></li>
@@ -180,7 +244,7 @@
 
   <div class="bottom-cta" style="opacity:0;pointer-events:none">
     <a href="/#reservation" class="bottom-cta__btn bottom-cta__btn--web"><span class="bottom-cta__icon"><i data-lucide="calendar"></i></span>予約</a>
-    <a href="tel:098-XXX-XXXX" class="bottom-cta__btn bottom-cta__btn--tel"><span class="bottom-cta__icon"><i data-lucide="phone"></i></span>電話</a>
+    <a href="tel:098-840-6584" class="bottom-cta__btn bottom-cta__btn--tel"><span class="bottom-cta__icon"><i data-lucide="phone"></i></span>電話</a>
     <a href="https://line.me/R/ti/p/@goya-rentacar" class="bottom-cta__btn bottom-cta__btn--line"><span class="bottom-cta__icon"><i data-lucide="message-circle"></i></span>LINE</a>
   </div>
 

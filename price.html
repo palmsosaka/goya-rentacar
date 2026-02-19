@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="css/style.css?v=5">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -72,14 +72,14 @@
         </div>
         <div class="cards-grid cards-grid--2">
           <div class="price-example animate-on-scroll">
-            <div class="price-example__label">コンパクトカー 2泊3日</div>
-            <div class="price-example__amount">¥XX,XXX〜</div>
-            <div class="price-example__note">基本料金＋補償（スタンダード）＋ナビ・ETC含む</div>
+            <div class="price-example__label">コンパクトカー（フィット・ノート等） 2泊3日</div>
+            <div class="price-example__amount">¥7,050〜</div>
+            <div class="price-example__note">1日2,350円×3日。カーナビ・ETC標準装備。補償別途</div>
           </div>
           <div class="price-example animate-on-scroll">
-            <div class="price-example__label">7人乗りミニバン 2泊3日</div>
-            <div class="price-example__amount">¥XX,XXX〜</div>
-            <div class="price-example__note">基本料金＋補償（スタンダード）＋ナビ・ETC含む</div>
+            <div class="price-example__label">ワゴン（ノア・セレナ等） 2泊3日</div>
+            <div class="price-example__amount">¥13,050〜</div>
+            <div class="price-example__note">1日4,350円×3日。カーナビ・ETC標準装備。補償別途</div>
           </div>
         </div>
         <div class="notice notice--info" style="margin-top:var(--sp-xl)">
@@ -99,30 +99,40 @@
             <thead>
               <tr>
                 <th>車種</th>
-                <th>6時間</th>
-                <th>12時間</th>
-                <th>24時間</th>
-                <th>以降1日</th>
+                <th>定員</th>
+                <th>日額料金</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>コンパクトカー</td>
-                <td>¥X,XXX</td>
-                <td>¥X,XXX</td>
-                <td>¥X,XXX</td>
-                <td>¥X,XXX</td>
+                <td>軽自動車（ハスラーHV・パレット等）</td>
+                <td>4名</td>
+                <td>1,350円〜</td>
               </tr>
               <tr>
-                <td>7人乗りミニバン</td>
-                <td>¥X,XXX</td>
-                <td>¥X,XXX</td>
-                <td>¥X,XXX</td>
-                <td>¥X,XXX</td>
+                <td>コンパクトカー（フィット・ノート等）</td>
+                <td>5名</td>
+                <td>2,350円〜</td>
+              </tr>
+              <tr>
+                <td>ミニバン（フリード等）</td>
+                <td>7名</td>
+                <td>要問合せ</td>
+              </tr>
+              <tr>
+                <td>ワゴン（ノア・セレナ・ステップワゴン等）</td>
+                <td>8名</td>
+                <td>4,350円〜</td>
+              </tr>
+              <tr>
+                <td>SUV（ハリアーHV等）</td>
+                <td>5名</td>
+                <td>4,350円〜</td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p style="margin-top:var(--sp-md);font-size:.875rem;color:var(--color-text-muted)">※上記は日額（1日あたり）の目安料金です。実際の料金は貸出期間・補償プランにより異なります。営業時間 09:00〜18:00 / TEL：<a href="tel:098-840-6584">098-840-6584</a></p>
       </div>
     </section>
 
@@ -141,12 +151,12 @@
           <div class="card strength-card animate-on-scroll">
             <div class="strength-card__icon"><i data-lucide="shield-check"></i></div>
             <h3 class="strength-card__title">補償料金</h3>
-            <p class="strength-card__text">補償プランにより異なります。<a href="/insurance.html">補償詳細を見る</a></p>
+            <p class="strength-card__text">免責補償制度あり。補償プランにより異なります。<a href="/insurance.html">補償詳細を見る</a></p>
           </div>
           <div class="card strength-card animate-on-scroll">
-            <div class="strength-card__icon">➕</div>
+            <div class="strength-card__icon"><i data-lucide="plus-circle"></i></div>
             <h3 class="strength-card__title">オプション料金</h3>
-            <p class="strength-card__text">チャイルドシートなどのオプションは別途料金がかかります。</p>
+            <p class="strength-card__text">チャイルドシート・ジュニアシート・ベビーシートをご用意。別途料金がかかります。カーナビ・ETC車載器は全車標準装備です。</p>
           </div>
         </div>
       </div>
@@ -184,7 +194,7 @@
     <section class="cta-section">
       <div class="container">
         <h2 class="cta-section__title">今すぐ予約・相談</h2>
-        <p class="cta-section__text">沖縄16年目の安心レンタカー。お気軽にお問い合わせください。</p>
+        <p class="cta-section__text">沖縄17年の安心レンタカー。お気軽にお問い合わせください。</p>
         <div class="cta-section__buttons">
           <a href="/#reservation" class="btn btn--web btn--lg" data-ga-event="cta_reservation_click">空き確認して予約（WEB）</a>
           <a href="https://line.me/R/ti/p/@goya-rentacar" class="btn btn--outline btn--lg" data-ga-event="cta_line_click">LINEで相談</a>
@@ -201,7 +211,7 @@
             <img src="images/logo-character.png" alt="" class="footer__logo-character">
             <img src="images/logo-text.png" alt="ゴーヤレンタカー" class="footer__logo-text-img">
           </div>
-          <p class="footer__desc">沖縄16年目のレンタカー。<br>安心と時短を重視する方へ。</p>
+          <p class="footer__desc">沖縄17年のレンタカー。<br>安心と時短を重視する方へ。</p>
         </div>
         <div>
           <h3 class="footer__heading">メニュー</h3>
@@ -217,7 +227,7 @@
         <div>
           <h3 class="footer__heading">お問い合わせ</h3>
           <ul class="footer__list">
-            <li><a href="tel:098-XXX-XXXX">電話：098-XXX-XXXX</a></li>
+            <li><a href="tel:098-840-6584">電話：098-840-6584</a></li>
             <li><a href="https://line.me/R/ti/p/@goya-rentacar">LINE相談</a></li>
             <li><a href="/access.html">店舗情報・アクセス</a></li>
             <li><a href="/company.html">会社情報</a></li>
@@ -233,7 +243,7 @@
 
   <div class="bottom-cta" style="opacity:0;pointer-events:none">
     <a href="/#reservation" class="bottom-cta__btn bottom-cta__btn--web"><span class="bottom-cta__icon"><i data-lucide="calendar"></i></span>予約</a>
-    <a href="tel:098-XXX-XXXX" class="bottom-cta__btn bottom-cta__btn--tel"><span class="bottom-cta__icon"><i data-lucide="phone"></i></span>電話</a>
+    <a href="tel:098-840-6584" class="bottom-cta__btn bottom-cta__btn--tel"><span class="bottom-cta__icon"><i data-lucide="phone"></i></span>電話</a>
     <a href="https://line.me/R/ti/p/@goya-rentacar" class="bottom-cta__btn bottom-cta__btn--line"><span class="bottom-cta__icon"><i data-lucide="message-circle"></i></span>LINE</a>
   </div>
 
