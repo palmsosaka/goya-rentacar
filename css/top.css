@@ -1,0 +1,194 @@
+/* ============================================
+   ゴーヤレンタカー TOP Page CSS
+   Reference: go-ya.labo.gg-map.net
+   ============================================ */
+
+/* Reset & Base */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans JP',sans-serif;font-size:16px;line-height:1.8;color:#333;background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+
+/* Container */
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.container--narrow{max-width:800px}
+.text-center{text-align:center;margin-top:24px}
+
+/* Section Title */
+.section-title{font-size:1.8rem;font-weight:700;text-align:center;margin-bottom:40px;position:relative;padding-bottom:16px}
+.section-title::after{content:'';display:block;width:60px;height:3px;background:linear-gradient(90deg,#2e7d32,#43a047);margin:12px auto 0;border-radius:2px}
+
+/* ========== Header ========== */
+.header{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;transition:box-shadow .3s}
+.header--scrolled{box-shadow:0 2px 12px rgba(0,0,0,.1)}
+.header__inner{display:flex;align-items:center;justify-content:space-between;max-width:1400px;margin:0 auto;padding:10px 20px}
+.logo-img{height:70px;width:auto}
+.header__nav{display:flex;gap:8px}
+.header__nav-btn{display:inline-block;padding:12px 24px;background:#3366cc;color:#fff;font-size:.9rem;font-weight:700;border-radius:4px;transition:background .2s}
+.header__nav-btn:hover{background:#2851a3}
+.header__menu-btn{padding:12px 20px;background:#333;color:#fff;font-size:.9rem;font-weight:700;border:none;border-radius:4px;cursor:pointer;transition:background .2s}
+.header__menu-btn:hover{background:#555}
+
+/* ========== Menu Overlay ========== */
+.menu-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:2000;opacity:0;pointer-events:none;transition:opacity .3s}
+.menu-overlay.is-open{opacity:1;pointer-events:auto}
+.menu-overlay__inner{position:absolute;right:0;top:0;bottom:0;width:320px;background:#fff;padding:60px 30px 30px;overflow-y:auto;transform:translateX(100%);transition:transform .3s}
+.menu-overlay.is-open .menu-overlay__inner{transform:translateX(0)}
+.menu-overlay__close{position:absolute;top:15px;right:20px;font-size:2rem;background:none;border:none;cursor:pointer;color:#333}
+.menu-overlay__nav{display:flex;flex-direction:column;gap:0}
+.menu-overlay__nav a{padding:14px 0;border-bottom:1px solid #eee;font-size:1rem;font-weight:500;color:#333}
+.menu-overlay__nav a:hover{color:#3366cc}
+
+/* ========== Sidebar CTA ========== */
+.sidebar-cta{position:fixed;left:0;top:50%;transform:translateY(-50%);z-index:900;display:flex;flex-direction:column;gap:0}
+.sidebar-cta__btn{display:flex;flex-direction:column;align-items:center;justify-content:center;width:80px;padding:14px 8px;color:#fff;font-size:.75rem;font-weight:700;text-align:center;transition:opacity .2s}
+.sidebar-cta__btn:hover{opacity:.85}
+.sidebar-cta__btn--web{background:#3366cc}
+.sidebar-cta__btn--tel{background:#d32f2f}
+.sidebar-cta__btn--line{background:#06c755}
+.sidebar-cta__icon{width:36px;height:36px;margin-bottom:4px}
+
+/* ========== Hero Carousel ========== */
+.hero{position:relative;width:100%;height:80vh;min-height:500px;overflow:hidden;margin-top:90px}
+.hero__carousel{position:absolute;inset:0}
+.hero__slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.5s ease}
+.hero__slide.is-active{opacity:1}
+.hero__overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(0,0,0,.1) 0%,rgba(0,0,0,.25) 100%)}
+.hero__content{text-align:center;color:#fff;padding:20px}
+.hero__logo{width:280px;margin:0 auto 20px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.3))}
+.hero__title{font-size:2.8rem;font-weight:900;text-shadow:2px 2px 8px rgba(0,0,0,.5);margin-bottom:12px;line-height:1.4}
+.hero__subtitle{font-size:1.4rem;font-weight:700;text-shadow:1px 1px 6px rgba(0,0,0,.5);margin-bottom:24px;line-height:1.6}
+.hero__message{background:rgba(255,255,255,.9);color:#333;padding:24px 32px;border-radius:8px;max-width:600px;margin:0 auto;font-size:.95rem;line-height:2;text-align:center}
+
+/* ========== News Section ========== */
+.news-section{padding:40px 0;border-bottom:1px solid #eee}
+.news-section__title{font-size:1.2rem;font-weight:700;margin-bottom:16px}
+.news-item{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+.news-item__date{font-size:.85rem;color:#888;white-space:nowrap}
+.news-item__text{font-size:.95rem}
+
+/* ========== Cars Section ========== */
+.cars-section{padding:60px 0;background:#f8f8f8}
+.cars-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.car-card{display:block;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.08);transition:transform .2s,box-shadow .2s}
+.car-card:hover{transform:translateY(-4px);box-shadow:0 6px 20px rgba(0,0,0,.12)}
+.car-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.car-card__name{padding:10px 12px;font-size:.85rem;font-weight:700;text-align:center;color:#333}
+
+/* ========== Points Section ========== */
+.points-section{padding:80px 0}
+.point-block{display:flex;align-items:center;gap:48px;margin-bottom:64px}
+.point-block:last-child{margin-bottom:0}
+.point-block--reverse{flex-direction:row-reverse}
+.point-block__image{flex:1;min-width:0}
+.point-block__image img{border-radius:12px;width:100%}
+.point-block__content{flex:1;min-width:0}
+.point-block__label{display:inline-block;background:#2e7d32;color:#fff;font-size:.8rem;font-weight:700;padding:4px 16px;border-radius:20px;margin-bottom:12px}
+.point-block__title{font-size:1.5rem;font-weight:700;line-height:1.6;margin-bottom:16px;color:#222}
+.point-block__text{font-size:.95rem;line-height:2;color:#555;margin-bottom:24px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:6px;font-size:1rem;font-weight:700;color:#fff;transition:opacity .2s;cursor:pointer;border:none}
+.btn:hover{opacity:.85}
+.btn--primary{background:#3366cc}
+.btn--tel{background:#d32f2f}
+.btn--line{background:#06c755}
+.btn-icon{width:2em;height:2em}
+
+/* ========== FAQ Section ========== */
+.faq-section{padding:80px 0;background:#f8f8f8}
+.faq-list{max-width:700px;margin:0 auto}
+.faq-item{border-bottom:1px solid #ddd;margin-bottom:0}
+.faq-item__q{display:block;width:100%;padding:18px 40px 18px 16px;font-size:1rem;font-weight:500;cursor:pointer;position:relative;list-style:none}
+.faq-item__q::-webkit-details-marker{display:none}
+.faq-item__q::after{content:'+';position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:1.4rem;font-weight:300;color:#999;transition:transform .2s}
+.faq-item[open] .faq-item__q::after{content:'−'}
+.faq-item__a{padding:0 16px 18px;font-size:.95rem;color:#555;line-height:1.8}
+.link-more{color:#3366cc;font-weight:500;font-size:.95rem}
+.link-more:hover{text-decoration:underline}
+
+/* ========== Access Section ========== */
+.access-section{padding:80px 0}
+.access-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.access-info__address{font-size:1.05rem;font-weight:500;margin-bottom:16px}
+.access-info__list{margin-bottom:16px}
+.access-info__list li{padding:6px 0;padding-left:20px;position:relative;font-size:.95rem}
+.access-info__list li::before{content:'✓';position:absolute;left:0;color:#2e7d32;font-weight:700}
+.access-map iframe{border-radius:8px;width:100%;min-height:300px}
+
+/* ========== Reserve Section ========== */
+.reserve-section{padding:80px 0;background:#f0f4f8}
+.reserve-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:800px;margin:0 auto}
+.reserve-card{display:flex;flex-direction:column;align-items:center;padding:32px 16px;border-radius:12px;color:#fff;text-align:center;transition:transform .2s}
+.reserve-card:hover{transform:translateY(-4px)}
+.reserve-card--web{background:#3366cc}
+.reserve-card--tel{background:#d32f2f}
+.reserve-card--line{background:#06c755}
+.reserve-card__icon{width:56px;height:56px;margin-bottom:12px}
+.reserve-card__label{font-size:1.4rem;font-weight:900;margin-bottom:4px}
+.reserve-card__sub{font-size:.8rem;opacity:.9;line-height:1.5}
+
+/* ========== Footer ========== */
+.footer{background:#333;color:#fff;padding:40px 0 0}
+.footer__top{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;padding-bottom:30px;border-bottom:1px solid #555}
+.footer__logo{height:50px;width:auto;margin-bottom:12px}
+.footer__tagline{font-size:.85rem;color:#ccc;line-height:1.8}
+.footer__links{display:flex;flex-wrap:wrap;gap:8px 20px}
+.footer__links a{font-size:.85rem;color:#ccc;transition:color .2s}
+.footer__links a:hover{color:#fff}
+.footer__bottom{text-align:center;padding:20px 0;font-size:.8rem;color:#999}
+
+/* Footer CTA (mobile bottom bar) */
+.footer-cta{display:none}
+
+/* ========== Responsive ========== */
+@media(max-width:768px){
+  .header__inner{padding:8px 12px}
+  .logo-img{height:45px}
+  .header__nav{display:none}
+  .header__menu-btn{padding:8px 14px;font-size:.8rem}
+
+  .sidebar-cta__btn{width:60px;padding:10px 4px}
+  .sidebar-cta__icon{width:28px;height:28px}
+  .sidebar-cta__btn span{font-size:.65rem}
+
+  .hero{height:60vh;min-height:400px;margin-top:62px}
+  .hero__logo{width:180px}
+  .hero__title{font-size:1.6rem}
+  .hero__subtitle{font-size:1rem}
+  .hero__message{font-size:.85rem;padding:16px 20px}
+
+  .cars-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .car-card__name{font-size:.75rem;padding:8px}
+
+  .point-block{flex-direction:column;gap:24px;margin-bottom:48px}
+  .point-block--reverse{flex-direction:column}
+  .point-block__title{font-size:1.2rem}
+  .point-block__text{font-size:.9rem}
+
+  .access-grid{grid-template-columns:1fr}
+
+  .reserve-grid{grid-template-columns:1fr;max-width:320px}
+
+  .footer__top{flex-direction:column;gap:24px}
+  .footer__links{flex-direction:column;gap:8px}
+
+  /* Mobile bottom fixed CTA */
+  .footer-cta{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:900;background:#fff;box-shadow:0 -2px 12px rgba(0,0,0,.15)}
+  .footer-cta__btn{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:12px 8px;font-size:.8rem;font-weight:700;color:#fff;text-align:center}
+  .footer-cta__btn--web{background:#3366cc}
+  .footer-cta__btn--tel{background:#d32f2f}
+  .footer-cta__btn--line{background:#06c755}
+  .footer-cta__icon{width:24px;height:24px}
+
+  body{padding-bottom:56px}
+}
+
+@media(max-width:480px){
+  .hero__title{font-size:1.3rem}
+  .hero__subtitle{font-size:.9rem}
+  .hero__message{font-size:.8rem;padding:12px 16px}
+  .sidebar-cta{display:none}
+}
