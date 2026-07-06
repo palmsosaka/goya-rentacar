@@ -39,7 +39,9 @@ async function loadNews() {
 
     listEl.innerHTML = data.contents.map(item => {
       const date = formatDate(item.publishedAt);
-      const category = escapeHtml(item.category || 'お知らせ');
+      const rawCat = item.category;
+      const catText = Array.isArray(rawCat) ? (rawCat[0] || '') : rawCat;
+      const category = escapeHtml(catText || 'お知らせ');
       const title = escapeHtml(item.title || '');
       return `<li class="news-list__item"><div class="news-list__meta"><span class="news-list__date">${date}</span><span class="news-list__category">${category}</span></div><p class="news-list__title">${title}</p></li>`;
     }).join('');
