@@ -11,8 +11,8 @@
    5. 未設定の場合は index.html の静的なお知らせが表示される (フォールバック)
    ============================================================ */
 
-const MICROCMS_SERVICE_ID = 'YOUR_SERVICE_ID';
-const MICROCMS_API_KEY = 'YOUR_API_KEY';
+const MICROCMS_SERVICE_ID = 'goya-rentacar';
+const MICROCMS_API_KEY = 'ZZT5PA7fb8cOwSQALNRoDTRu4kMzAy2p35bM';
 const NEWS_LIMIT = 5;
 
 async function loadNews() {
