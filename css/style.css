@@ -31,7 +31,7 @@
   --sp-xl: 2rem; --sp-2xl: 3rem; --sp-3xl: 4rem; --sp-4xl: 6rem;
   --max-w: 1200px;
   --max-w-narrow: 800px;
-  --header-h: 80px;
+  --header-h: 100px;
   --bottom-h: 64px;
   --radius: 8px;
   --radius-lg: 16px;
@@ -81,8 +81,7 @@ table{border-collapse:collapse}
 .header--scrolled{box-shadow:0 4px 20px rgba(74,55,40,.08)}
 .header__inner{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:var(--max-w);margin:0 auto;padding:0 var(--sp-md)}
 .header__logo{display:flex;align-items:center;gap:8px;text-decoration:none;margin-right:var(--sp-lg)}
-.header__logo-character{height:56px;width:auto}
-.header__logo-text-img{height:56px;width:auto}
+.header__logo-img{height:80px;width:auto}
 .header__actions{display:flex;align-items:center;gap:var(--sp-sm)}
 .header__divider{width:1px;height:24px;background:var(--color-border);margin:0 var(--sp-xs)}
 
@@ -118,13 +117,13 @@ table{border-collapse:collapse}
 }
 
 /* Hero */
-.hero{position:relative;margin-top:var(--header-h);padding:var(--sp-4xl) 0 calc(var(--sp-4xl) + 40px);color:var(--color-white);overflow:hidden;min-height:520px;display:flex;align-items:center}
+.hero{position:relative;margin-top:var(--header-h);padding:var(--sp-4xl) 0 calc(var(--sp-4xl) + 40px);color:var(--color-white);overflow:hidden;aspect-ratio:11/6;min-height:520px;display:flex;align-items:flex-end}
 .hero__slides{position:absolute;inset:0;z-index:0}
 .hero__slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transform:scale(1);transition:opacity 2s ease-in-out,transform 7s linear}
 .hero__slide.is-active{opacity:1;transform:scale(1.06)}
-.hero__overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(12,27,42,.7) 0%,rgba(0,119,182,.5) 50%,rgba(0,168,232,.3) 100%);pointer-events:none}
-.hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:80px;z-index:2;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80' preserveAspectRatio='none'%3E%3Cpath d='M0,60 C360,0 720,80 1080,30 C1260,5 1380,40 1440,60 L1440,80 L0,80 Z' fill='%23FBF7F2'/%3E%3C/svg%3E") no-repeat bottom/100% 100%}
-.hero__inner{position:relative;z-index:3;max-width:720px}
+.hero__overlay{display:none}
+.hero::after{display:none}
+.hero__inner{position:relative;z-index:3;max-width:none;width:100%;padding-left:7vw;padding-right:var(--sp-md)}
 .hero__lead{font-size:var(--fs-lg);font-weight:500;line-height:1.6;text-shadow:0 2px 12px rgba(0,0,0,.4);margin-bottom:var(--sp-xs)}
 .hero__title{font-size:3rem;font-weight:900;line-height:1.2;margin-bottom:var(--sp-sm);text-shadow:0 2px 16px rgba(0,0,0,.4);white-space:nowrap}
 .hero__title em{font-style:normal;color:#FFD166;text-shadow:0 2px 12px rgba(0,0,0,.4)}
@@ -136,6 +135,7 @@ table{border-collapse:collapse}
 .badge__icon{font-size:var(--fs-lg);line-height:1}
 .badge .lucide{width:18px;height:18px}
 .hero__cta{display:flex;flex-direction:column;gap:var(--sp-sm)}
+@media(min-width:640px){.hero__cta{flex-direction:row;gap:var(--sp-md);align-items:center}}
 
 /* Buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--sp-sm);padding:var(--sp-md) var(--sp-xl);font-family:var(--font-family);font-size:var(--fs-base);font-weight:700;border:none;border-radius:var(--radius-lg);cursor:pointer;text-decoration:none;text-align:center;transition:all .2s;line-height:1.4;white-space:nowrap}
@@ -222,12 +222,6 @@ table{border-collapse:collapse}
 .faq__item.is-open .faq__answer{display:block}
 
 /* Reservation Calendar Embed */
-.reservation-embed{padding:var(--sp-2xl) 0;background:var(--color-bg-alt)}
-.reservation-embed__title{text-align:center;font-size:var(--fs-xl);font-weight:700;color:var(--color-dark);margin-bottom:var(--sp-lg)}
-.reservation-embed__frame{width:100%;min-height:640px;background:var(--color-white);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:var(--sp-md);padding:var(--sp-xl);border:2px dashed var(--color-border)}
-.reservation-embed__fallback{text-align:center;padding:var(--sp-xl)}
-.reservation-embed__fallback p{margin-bottom:var(--sp-md);color:var(--color-text-light)}
-@media(min-width:1024px){.reservation-embed__frame{min-height:520px}}
 
 /* Footer */
 .footer{background:var(--color-sand-warm);color:var(--color-text);position:relative}
@@ -237,8 +231,7 @@ table{border-collapse:collapse}
 .footer__main{display:flex;flex-direction:column;align-items:center;text-align:center;gap:var(--sp-xl);padding:var(--sp-2xl) 0}
 .footer__brand{display:flex;flex-direction:column;align-items:center}
 .footer__logo{display:flex;align-items:center;gap:8px;margin-bottom:var(--sp-sm)}
-.footer__logo-character{height:72px;width:auto}
-.footer__logo-text-img{height:72px;width:auto}
+.footer__logo-img{height:100px;width:auto}
 .footer__desc{font-size:var(--fs-sm);line-height:1.7;color:var(--color-text-light)}
 .footer__nav{display:flex;flex-wrap:nowrap;justify-content:center;gap:var(--sp-lg)}
 .footer__nav a{font-size:var(--fs-sm);font-weight:500;color:var(--color-text);transition:color .2s;position:relative}

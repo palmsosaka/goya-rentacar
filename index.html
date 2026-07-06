@@ -40,8 +40,7 @@
   <header class="header">
     <div class="header__inner">
       <a href="index.html" class="header__logo">
-        <img src="images/logo-character.webp" alt="" class="header__logo-character">
-        <img src="images/logo-text.webp" alt="ゴーヤレンタカー" class="header__logo-text-img">
+        <img src="images/logo.png" alt="ゴーヤレンタカー" class="header__logo-img">
       </a>
       <div class="header__actions">
         <div class="lang-switch">
@@ -82,22 +81,12 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero__slides">
-      <div class="hero__slide is-active" style="background-image:url('images/hero-beach.webp')"></div>
+      <div class="hero__slide is-active" style="background-image:url('images/senaga30.png')"></div>
+      <div class="hero__slide" style="background-image:url('images/buggy.png')"></div>
       <div class="hero__slide" style="background-image:url('images/hero-aquarium.webp')"></div>
-      <div class="hero__slide" style="background-image:url('images/hero-shuri.webp')"></div>
     </div>
     <div class="hero__overlay"></div>
     <div class="container hero__inner">
-      <p class="hero__lead">那覇空港・ホテル送迎で</p>
-      <h1 class="hero__title"><em>最短0分出発</em></h1>
-      <p class="hero__lead">おかげさまで設立17年</p>
-      <p class="hero__sub">補償プランが選べて総額が明確。<br>送迎の仕組み化で待ち時間を最小化。</p>
-      <div class="badges">
-        <span class="badge"><span class="badge__icon"><i data-lucide="zap"></i></span>最短0分出発</span>
-        <span class="badge"><span class="badge__icon"><i data-lucide="bus"></i></span>空港・ホテル送迎</span>
-        <span class="badge"><span class="badge__icon"><i data-lucide="shield-check"></i></span>補償プラン充実</span>
-        <span class="badge"><span class="badge__icon"><i data-lucide="users"></i></span>7人乗りミニバン</span>
-      </div>
       <div class="hero__cta">
         <a href="#reservation" class="btn btn--web btn--lg" data-ga-event="hero_reservation_click"><img src="assets/img/icon_web.png" alt="" class="btn__icon">今すぐ予約</a>
         <a href="https://line.me/R/ti/p/@228tryuy" class="btn btn--outline btn--lg" data-ga-event="hero_line_click"><img src="assets/img/icon_line.png" alt="" class="btn__icon">LINEで相談</a>
@@ -397,24 +386,8 @@
       </div>
     </section>
 
-    <!-- Reservation Calendar -->
-    <section class="reservation-embed section--alt" id="reservation">
-      <div class="container">
-        <h2 class="reservation-embed__title">空き状況を確認して、そのまま予約</h2>
-        <div class="reservation-embed__frame">
-          <p>予約カレンダーをここに埋め込みます</p>
-          <p style="font-size:14px;color:var(--color-text-light)">（iFrame / JSウィジェット / 外部リンクのいずれかで実装）</p>
-          <div class="reservation-embed__fallback">
-            <a href="https://example.com/reservation" class="btn btn--web" data-ga-event="calendar_outbound_click"><img src="assets/img/icon_web.png" alt="" class="btn__icon">こちらから空き確認</a>
-            <p>お電話：<a href="tel:098-840-6584">098-840-6584</a></p>
-            <p><a href="https://line.me/R/ti/p/@228tryuy">LINEでの相談はこちら</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section class="cta-section" id="reservation">
       <div class="container">
         <h2 class="cta-section__title">今すぐ予約・相談</h2>
         <p class="cta-section__text">沖縄17年の安心レンタカー。お気軽にお問い合わせください。</p>
@@ -444,8 +417,7 @@
       <div class="footer__main">
         <div class="footer__brand">
           <div class="footer__logo">
-            <img src="images/logo-character.webp" alt="" class="footer__logo-character" loading="lazy">
-            <img src="images/logo-text.webp" alt="ゴーヤレンタカー" class="footer__logo-text-img" loading="lazy">
+            <img src="images/logo.png" alt="ゴーヤレンタカー" class="footer__logo-img" loading="lazy">
           </div>
           <p class="footer__desc">おかげさまで設立17年</p>
         </div>
