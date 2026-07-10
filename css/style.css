@@ -139,8 +139,10 @@ table{border-collapse:collapse}
 .badge .lucide{width:18px;height:18px}
 .hero__cta{display:flex;flex-direction:column;gap:var(--sp-sm)}
 @media(min-width:640px){.hero__cta{flex-direction:row;gap:var(--sp-md);align-items:center}}
-.hero-cta-bar{background:#fff;padding:var(--sp-lg) 0}
-.hero-cta-bar .hero__cta{justify-content:center}
+.hero-cta-bar{background:#fff;padding:var(--sp-xl) var(--sp-md)}
+@media(min-width:768px){.hero-cta-bar{padding:var(--sp-2xl) var(--sp-md)}}
+.hero-cta-bar .hero__cta{justify-content:center;gap:var(--sp-md)}
+@media(min-width:640px){.hero-cta-bar .hero__cta{gap:var(--sp-lg)}}
 @keyframes ctaPulseWeb{0%,100%{box-shadow:0 4px 14px rgba(255,107,53,.35);transform:scale(1)}50%{box-shadow:0 6px 24px rgba(255,107,53,.55),0 0 0 8px rgba(255,107,53,.08);transform:scale(1.03)}}
 @keyframes ctaPulseLine{0%,100%{box-shadow:0 4px 14px rgba(6,199,85,.3);transform:scale(1)}50%{box-shadow:0 6px 24px rgba(6,199,85,.5),0 0 0 8px rgba(6,199,85,.08);transform:scale(1.03)}}
 .hero-cta-bar .btn--web{animation:ctaPulseWeb 2.4s ease-in-out infinite}
