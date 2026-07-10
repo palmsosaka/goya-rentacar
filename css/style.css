@@ -141,6 +141,12 @@ table{border-collapse:collapse}
 @media(min-width:640px){.hero__cta{flex-direction:row;gap:var(--sp-md);align-items:center}}
 .hero-cta-bar{background:#fff;padding:var(--sp-lg) 0}
 .hero-cta-bar .hero__cta{justify-content:center}
+@keyframes ctaPulseWeb{0%,100%{box-shadow:0 4px 14px rgba(255,107,53,.35);transform:scale(1)}50%{box-shadow:0 6px 24px rgba(255,107,53,.55),0 0 0 8px rgba(255,107,53,.08);transform:scale(1.03)}}
+@keyframes ctaPulseLine{0%,100%{box-shadow:0 4px 14px rgba(6,199,85,.3);transform:scale(1)}50%{box-shadow:0 6px 24px rgba(6,199,85,.5),0 0 0 8px rgba(6,199,85,.08);transform:scale(1.03)}}
+.hero-cta-bar .btn--web{animation:ctaPulseWeb 2.4s ease-in-out infinite}
+.hero-cta-bar .btn--line{animation:ctaPulseLine 2.4s ease-in-out infinite;animation-delay:.6s}
+.hero-cta-bar .btn:hover{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.hero-cta-bar .btn--web,.hero-cta-bar .btn--line{animation:none}}
 
 /* Buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--sp-sm);padding:var(--sp-md) var(--sp-xl);font-family:var(--font-family);font-size:var(--fs-base);font-weight:700;border:none;border-radius:var(--radius-lg);cursor:pointer;text-decoration:none;text-align:center;transition:all .2s;line-height:1.4;white-space:nowrap}
