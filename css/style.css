@@ -69,7 +69,6 @@ table{border-collapse:collapse}
 .section--alt::before{content:'';position:absolute;top:-1px;left:0;right:0;height:40px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 40' preserveAspectRatio='none'%3E%3Cpath d='M0,30 C320,5 640,35 960,15 C1200,0 1360,25 1440,30 L1440,0 L0,0 Z' fill='%23FBF7F2'/%3E%3C/svg%3E") no-repeat top/100% 100%}
 .section--alt::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:40px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 40' preserveAspectRatio='none'%3E%3Cpath d='M0,10 C320,35 640,5 960,25 C1200,40 1360,15 1440,10 L1440,40 L0,40 Z' fill='%23FBF7F2'/%3E%3C/svg%3E") no-repeat bottom/100% 100%}
 .section--alt+.section--alt::before{display:none}
-.section--alt:has(+.section--alt)::after{display:none}
 .section--primary{background:var(--color-primary);color:var(--color-white)}
 .section--primary .section__title{color:var(--color-white)}
 .section__header{text-align:center;margin-bottom:var(--sp-2xl)}
