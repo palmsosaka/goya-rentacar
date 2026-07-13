@@ -32,9 +32,12 @@ function initHamburger() {
   const nav = document.querySelector('.nav');
   if (!btn || !nav) return;
 
+  btn.setAttribute('aria-expanded', 'false');
+
   btn.addEventListener('click', function() {
     btn.classList.toggle('is-active');
     nav.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', nav.classList.contains('is-open') ? 'true' : 'false');
     document.body.style.overflow = nav.classList.contains('is-open') ? 'hidden' : '';
   });
 
@@ -43,6 +46,7 @@ function initHamburger() {
     link.addEventListener('click', function() {
       btn.classList.remove('is-active');
       nav.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
     });
   });
@@ -56,16 +60,23 @@ function initFAQ() {
     const question = item.querySelector('.faq__question');
     if (!question) return;
 
+    question.setAttribute('aria-expanded', item.classList.contains('is-open') ? 'true' : 'false');
+
     question.addEventListener('click', function() {
       const isOpen = item.classList.contains('is-open');
 
       // 他のFAQを閉じる
       items.forEach(other => {
-        if (other !== item) other.classList.remove('is-open');
+        if (other !== item) {
+          other.classList.remove('is-open');
+          const otherQuestion = other.querySelector('.faq__question');
+          if (otherQuestion) otherQuestion.setAttribute('aria-expanded', 'false');
+        }
       });
 
       // クリックしたFAQをトグル
       item.classList.toggle('is-open');
+      question.setAttribute('aria-expanded', item.classList.contains('is-open') ? 'true' : 'false');
 
       // GA4計測
       if (!isOpen) {
