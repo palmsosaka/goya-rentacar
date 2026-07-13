@@ -12,7 +12,7 @@
    ============================================================ */
 
 const MICROCMS_SERVICE_ID = 'goya-rentacar';
-const MICROCMS_API_KEY = 'ZZT5PA7fb8cOwSQALNRoDTRu4kMzAy2p35bM';
+const MICROCMS_API_KEY = 'J53hbw7NVT07FHf8PIszgYUUSH62clMFnR5N';
 const NEWS_LIMIT = 5;
 
 async function loadNews() {
