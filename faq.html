@@ -18,7 +18,7 @@
   <link rel="icon" href="images/favicon.ico" sizes="any">
   <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="stylesheet" href="css/style.css?v=30">
+  <link rel="stylesheet" href="css/style.css?v=32">
   <script src="https://unpkg.com/lucide@0.460.0"></script>
 </head>
 <body>
@@ -52,6 +52,7 @@
     <nav class="nav" aria-label="メインナビゲーション">
       <ul class="nav__list">
         <li class="nav__item"><a href="cars.html" class="nav__link">車種</a></li>
+        <li class="nav__item"><a href="price.html" class="nav__link">料金</a></li>
         <li class="nav__item"><a href="insurance.html" class="nav__link">補償</a></li>
         <li class="nav__item"><a href="pickup.html" class="nav__link">送迎</a></li>
         <li class="nav__item"><a href="faq.html" class="nav__link is-active">FAQ</a></li>
@@ -83,44 +84,72 @@
     <section class="section">
       <div class="container container--narrow">
         <div class="faq__item">
-          <button class="faq__question"><span class="faq__q-label">Q</span><span>送迎はどのくらい待ちますか？</span><span class="faq__toggle"></span></button>
-          <div class="faq__answer"><p>最短0分で出発できる体制を整えています。送迎オペの統制により、待ち時間を最小化する運用を行っています。到着連絡後、スムーズにお迎えいたします。</p></div>
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>初心者でも予約・貸出はできますか？</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>弊社では、免許取得後、半年を経たない方への貸渡はお断りしております。</p></div>
         </div>
         <div class="faq__item">
-          <button class="faq__question"><span class="faq__q-label">Q</span><span>補償プランは選べますか？</span><span class="faq__toggle"></span></button>
-          <div class="faq__answer"><p>はい、複数の補償プランをご用意しています。免責額やNOC、補償内容が異なりますので、ご希望に合わせてお選びいただけます。総額が読めるよう、事前にご案内いたします。</p></div>
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>国際免許でレンタカーは借りられますか？</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>はい、大丈夫です。<br>貸渡時に「国際免許証」と「パスポート」のご提示をお願いいたします。<br>また、国際免許証でご利用のお客様には原則クレジットカードでのお支払をお願いしております。</p></div>
         </div>
         <div class="faq__item">
-          <button class="faq__question"><span class="faq__q-label">Q</span><span>7人乗りミニバンはありますか？</span><span class="faq__toggle"></span></button>
-          <div class="faq__answer"><p>はい、7人乗りミニバンをご用意しています。家族旅行やグループ旅行に最適です。荷物もたっぷり収納でき、チャイルドシートなどのオプションもご用意しています。</p></div>
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>車種の希望はできますか？</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>台数に限りがございますので、車種の確約はご遠慮頂いております。<br>但し、ご希望に添えるよう努めてまいりますので、どうぞご予約時にご希望をお伝えくださいませ。</p></div>
         </div>
         <div class="faq__item">
-          <button class="faq__question"><span class="faq__q-label">Q</span><span>当日予約は可能ですか？</span><span class="faq__toggle"></span></button>
-          <div class="faq__answer"><p>空きがあれば当日予約も可能です。お電話またはLINEでお気軽にお問い合わせください。最短0分出発体制のため、急なご予約にも対応可能です。</p></div>
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>夜遅い時間の貸出・朝早い時間の返却は可能ですか？</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>申し訳ありません。弊社の営業時間は <strong>9:00〜18:00</strong> とさせていただいております。<br>このお時間以外の貸出および返却業務は一切行っておりませんので、ご了承くださいませ。<br>（ご利用当日に天候または航空機材の都合で飛行機の到着が営業時間より遅れる場合のみ、貸出手続きをさせていただいております）</p></div>
         </div>
         <div class="faq__item">
-          <button class="faq__question"><span class="faq__q-label">Q</span><span>追加費用はかかりますか？</span><span class="faq__toggle"></span></button>
-          <div class="faq__answer"><p>基本料金と補償料金、オプション料金が含まれます。追加費用の不安を減らすため、事前に総額をご案内いたします。明朗会計を心がけています。</p></div>
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>ペットを連れて行きたいのですが、大丈夫ですか？</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>ペットにつきましては、申し訳ございませんが、同乗を受け付けておりません。</p></div>
         </div>
         <div class="faq__item">
-          <button class="faq__question"><span class="faq__q-label">Q</span><span>フライトが遅延した場合はどうなりますか？</span><span class="faq__toggle"></span></button>
-          <div class="faq__answer"><p>フライトが遅延した場合でも、到着連絡をいただければ対応いたします。事前にご連絡いただくことで、スムーズに対応できます。</p></div>
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>福祉車両（ウェルキャブ車・フレンドマチック車）はありますか？</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>申し訳ございません。弊社では上記車両を保有しておりません。</p></div>
         </div>
         <div class="faq__item">
-          <button class="faq__question"><span class="faq__q-label">Q</span><span>チャイルドシートはありますか？</span><span class="faq__toggle"></span></button>
-          <div class="faq__answer"><p>はい、チャイルドシートをご用意しています。ご予約時にご希望をお知らせください。幼児用・学童用など、お子様の年齢に合わせてご用意いたします。</p></div>
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>ご予約確定後に変更・取消しをしたいのですが。</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>メールまたはお電話にて受け付けております。メールの場合、貸出日時・お名前・ご連絡先を明記のうえお送りください。24時間以内に弊社スタッフより「変更もしくは取消の完了」メールをお送りいたします。<br>また、<strong>予約前日・当日のお取り消し・変更につきましては、必ずメールではなくお電話でお願いいたします。</strong></p></div>
         </div>
         <div class="faq__item">
-          <button class="faq__question"><span class="faq__q-label">Q</span><span>支払方法は何がありますか？</span><span class="faq__toggle"></span></button>
-          <div class="faq__answer"><p>クレジットカード、現金でのお支払いに対応しています。詳細は予約時にお問い合わせください。</p></div>
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>車を借りるときに必要なものを教えてください。</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p><strong>「運転免許証」が必ず必要です。</strong><br>当日忘れてこられた場合、貸出はお断りしております（例外は一切認めておりません）。</p></div>
         </div>
         <div class="faq__item">
-          <button class="faq__question"><span class="faq__q-label">Q</span><span>免許証のコピーは必要ですか？</span><span class="faq__toggle"></span></button>
-          <div class="faq__answer"><p>はい、運転される方全員の免許証が必要です。当日ご持参ください。</p></div>
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>料金の支払方法を教えてください。</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>代金は貸渡時にお支払いください。<br>お支払いは<strong>クレジットカード決済のみ</strong>とさせていただいております（一般的なカード銘柄に対応しております）。<br>また、返却日時が遅れる場合、事前のご精算が必要になります。</p></div>
         </div>
         <div class="faq__item">
-          <button class="faq__question"><span class="faq__q-label">Q</span><span>営業時間を教えてください</span><span class="faq__toggle"></span></button>
-          <div class="faq__answer"><p>営業時間は9:00〜18:00です。お電話でのお問い合わせもお気軽にどうぞ。</p></div>
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>お店以外での貸渡・配車はできますか？</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>申し訳ございません。貸出・返却ともに店舗のみでのお取り扱いとなります。</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>当日、飛行機が欠航で行けなくなりました。どうすればいいですか？</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>その場合は弊社までお電話ください。<br><strong>欠航によるお車のキャンセルの場合は、キャンセル料は必要ございません。</strong></p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>カーナビの使い方がわかりません。どうすればいいですか？</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>弊社では貸出時に、主要なカーナビ操作、目的別のカーナビ使い方を簡単にまとめたガイドをお渡しいたします（従来の説明書も車両にございます）。また、出発時に簡単な説明もさせていただきますのでご安心くださいませ。<br>※ただし、カーナビを理由とする返却遅延につきましては、お受けいたしかねます。</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>走行距離の制限はありますか？</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>走行距離の制限や、それに伴う追加代金はございません。時間内でしたらどれだけ走ってもOKです。</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>走行中に事故を起こしてしまいました。どうすればいいですか？</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>まずは警察にご連絡いただき、現場検証を行います。それから弊社にお電話いただき、状況・対応方法等をご相談ください。</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>返却前にすることはありますか？</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>ご返却時には、弊社近辺の給油所にて<strong>ガソリンを満タン</strong>にしていただいてからご返却くださいませ。洗車・オイル交換・水抜き等の必要はございません。</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>時間がなくて、ガソリンを入れる時間がありませんでした。どうなりますか？</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>満タン状態で返却をされていないお客様につきましては、残り<strong>3/4以上・半分以上・1/4以上・1/4未満</strong>の4段階に分け、各車両のガソリンタンク容量に応じた精算をさせていただきます。</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question"><span class="faq__q-label">Q</span><span>時間に遅れそうです。どうすればいいですか？</span><span class="faq__toggle"></span></button>
+          <div class="faq__answer"><p>まずは弊社までお電話くださいませ。<br>飛行機の出発時間に遅れそうな場合は、<strong>手数料5,500円</strong>にて空港返却を行っております。お電話いただいた際に、時間を見てご相談させていただきます。<br>閉店時間より遅れてしまう場合は、翌日営業時間での返却をお願いしております（別途延長費用が必要です）。<br>※返却前に慌てて運転をされて、事故をしてしまうケースが多いようです。常に安全ドライブを心がけてください。</p></div>
         </div>
       </div>
     </section>
@@ -157,14 +186,13 @@
           <p class="footer__desc">おかげさまで設立16年</p>
         </div>
         <nav class="footer__nav">
-          <a href="strengths.html">強み</a>
           <a href="cars.html">車種</a>
-          <a href="price.html">料金</a>
           <a href="insurance.html">補償</a>
           <a href="pickup.html">送迎</a>
           <a href="faq.html">FAQ</a>
           <a href="access.html">アクセス</a>
           <a href="company.html">会社情報</a>
+          <a href="terms.html">自動車貸渡約款</a>
         </nav>
         <div class="footer__contact">
           <a href="tel:098-840-6584" class="footer__tel">
@@ -191,16 +219,23 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "送迎はどのくらい待ちますか？", "acceptedAnswer": {"@type": "Answer", "text": "最短0分で出発できる体制を整えています。送迎オペの統制により、待ち時間を最小化する運用を行っています。"}},
-      {"@type": "Question", "name": "補償プランは選べますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、複数の補償プランをご用意しています。免責額やNOC、補償内容が異なりますので、ご希望に合わせてお選びいただけます。"}},
-      {"@type": "Question", "name": "7人乗りミニバンはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、7人乗りミニバンをご用意しています。家族旅行やグループ旅行に最適です。"}},
-      {"@type": "Question", "name": "当日予約は可能ですか？", "acceptedAnswer": {"@type": "Answer", "text": "空きがあれば当日予約も可能です。お電話またはLINEでお気軽にお問い合わせください。"}},
-      {"@type": "Question", "name": "追加費用はかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "基本料金と補償料金、オプション料金を含んだ総額を事前にご案内いたします。"}},
-      {"@type": "Question", "name": "フライトが遅延した場合はどうなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "フライトが遅延した場合でも、到着連絡をいただければ対応いたします。"}},
-      {"@type": "Question", "name": "チャイルドシートはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、チャイルドシートをご用意しています。幼児用・学童用など、お子様の年齢に合わせてご用意いたします。"}},
-      {"@type": "Question", "name": "支払方法は何がありますか？", "acceptedAnswer": {"@type": "Answer", "text": "クレジットカード、現金でのお支払いに対応しています。"}},
-      {"@type": "Question", "name": "免許証のコピーは必要ですか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、運転される方全員の免許証が必要です。当日ご持参ください。"}},
-      {"@type": "Question", "name": "営業時間を教えてください", "acceptedAnswer": {"@type": "Answer", "text": "営業時間は9:00〜18:00です。"}}
+      {"@type": "Question", "name": "初心者でも予約・貸出はできますか？", "acceptedAnswer": {"@type": "Answer", "text": "弊社では、免許取得後、半年を経たない方への貸渡はお断りしております。"}},
+      {"@type": "Question", "name": "国際免許でレンタカーは借りられますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、大丈夫です。貸渡時に「国際免許証」と「パスポート」のご提示をお願いいたします。また、国際免許証でご利用のお客様には原則クレジットカードでのお支払をお願いしております。"}},
+      {"@type": "Question", "name": "車種の希望はできますか？", "acceptedAnswer": {"@type": "Answer", "text": "台数に限りがございますので、車種の確約はご遠慮頂いております。但し、ご希望に添えるよう努めてまいりますので、ご予約時にご希望をお伝えくださいませ。"}},
+      {"@type": "Question", "name": "夜遅い時間の貸出・朝早い時間の返却は可能ですか？", "acceptedAnswer": {"@type": "Answer", "text": "弊社の営業時間は9:00〜18:00です。このお時間以外の貸出および返却業務は一切行っておりません。ただし、ご利用当日に天候または航空機材の都合で飛行機の到着が営業時間より遅れる場合のみ、貸出手続きをさせていただいております。"}},
+      {"@type": "Question", "name": "ペットを連れて行きたいのですが、大丈夫ですか？", "acceptedAnswer": {"@type": "Answer", "text": "ペットにつきましては、申し訳ございませんが、同乗を受け付けておりません。"}},
+      {"@type": "Question", "name": "福祉車両（ウェルキャブ車・フレンドマチック車）はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "申し訳ございません。弊社では上記車両を保有しておりません。"}},
+      {"@type": "Question", "name": "ご予約確定後に変更・取消しをしたいのですが。", "acceptedAnswer": {"@type": "Answer", "text": "メールまたはお電話にて受け付けております。メールの場合、貸出日時・お名前・ご連絡先を明記のうえお送りください。24時間以内に弊社スタッフより「変更もしくは取消の完了」メールをお送りいたします。予約前日・当日のお取り消し・変更につきましては、必ずメールではなくお電話でお願いいたします。"}},
+      {"@type": "Question", "name": "車を借りるときに必要なものを教えてください。", "acceptedAnswer": {"@type": "Answer", "text": "「運転免許証」が必ず必要です。当日忘れてこられた場合、貸出はお断りしております（例外は一切認めておりません）。"}},
+      {"@type": "Question", "name": "料金の支払方法を教えてください。", "acceptedAnswer": {"@type": "Answer", "text": "代金は貸渡時にお支払いください。お支払いはクレジットカード決済のみとさせていただいております（一般的なカード銘柄に対応しております）。また、返却日時が遅れる場合、事前のご精算が必要になります。"}},
+      {"@type": "Question", "name": "お店以外での貸渡・配車はできますか？", "acceptedAnswer": {"@type": "Answer", "text": "申し訳ございません。貸出・返却ともに店舗のみでのお取り扱いとなります。"}},
+      {"@type": "Question", "name": "当日、飛行機が欠航で行けなくなりました。どうすればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "その場合は弊社までお電話ください。欠航によるお車のキャンセルの場合は、キャンセル料は必要ございません。"}},
+      {"@type": "Question", "name": "カーナビの使い方がわかりません。どうすればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "貸出時に、主要なカーナビ操作、目的別のカーナビ使い方を簡単にまとめたガイドをお渡しいたします（従来の説明書も車両にございます）。出発時に簡単な説明もさせていただきます。ただし、カーナビを理由とする返却遅延につきましてはお受けいたしかねます。"}},
+      {"@type": "Question", "name": "走行距離の制限はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "走行距離の制限や、それに伴う追加代金はございません。時間内でしたらどれだけ走ってもOKです。"}},
+      {"@type": "Question", "name": "走行中に事故を起こしてしまいました。どうすればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "まずは警察にご連絡いただき、現場検証を行います。それから弊社にお電話いただき、状況・対応方法等をご相談ください。"}},
+      {"@type": "Question", "name": "返却前にすることはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "ご返却時には、弊社近辺の給油所にてガソリンを満タンにしていただいてからご返却くださいませ。洗車・オイル交換・水抜き等の必要はございません。"}},
+      {"@type": "Question", "name": "時間がなくて、ガソリンを入れる時間がありませんでした。どうなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "満タン状態で返却をされていないお客様につきましては、残り3/4以上・半分以上・1/4以上・1/4未満の4段階に分け、各車両のガソリンタンク容量に応じた精算をさせていただきます。"}},
+      {"@type": "Question", "name": "時間に遅れそうです。どうすればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "まずは弊社までお電話くださいませ。飛行機の出発時間に遅れそうな場合は、手数料5,500円にて空港返却を行っております。閉店時間より遅れてしまう場合は、翌日営業時間での返却をお願いしております（別途延長費用が必要です）。"}}
     ]
   }
   </script>

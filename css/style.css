@@ -264,8 +264,8 @@ table{border-collapse:collapse}
 .footer__main{display:flex;flex-direction:column;align-items:center;text-align:center;gap:var(--sp-xl);padding:var(--sp-2xl) 0}
 .footer__brand{display:flex;flex-direction:column;align-items:center}
 .footer__logo{display:flex;align-items:center;gap:8px;margin-bottom:var(--sp-sm)}
-.footer__logo-img{height:72px;width:auto}
-@media(min-width:768px){.footer__logo-img{height:100px}}
+.footer__logo-img{height:120px;width:auto}
+@media(min-width:768px){.footer__logo-img{height:160px}}
 .footer__desc{font-size:var(--fs-sm);line-height:1.7;color:var(--color-text-light)}
 .footer__nav{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--sp-md) var(--sp-lg)}
 .footer__nav a{font-size:var(--fs-sm);font-weight:500;color:var(--color-text);transition:color .2s;position:relative}
@@ -469,3 +469,24 @@ table{border-collapse:collapse}
   .hero,.page-header,.lp-hero{margin-top:0;background:none!important;color:#000!important}
   .hero::after,.page-header::after,.lp-hero::after,.cta-section::before{display:none}
 }
+
+/* ===== 自動車貸渡約款 (terms.html) ===== */
+.terms{font-size:var(--fs-sm);line-height:1.9}
+.terms__toc{background:var(--color-bg-alt);border:1px solid var(--color-border);border-radius:8px;padding:var(--sp-lg);margin-bottom:var(--sp-2xl)}
+.terms__toc-title{font-weight:700;margin-bottom:var(--sp-sm)}
+.terms__toc ol{margin:0;padding-left:1.4em}
+.terms__toc li{margin:.2em 0}
+.terms__toc a{color:var(--color-primary);text-decoration:none}
+.terms__toc a:hover{text-decoration:underline}
+.terms__chapter{font-size:var(--fs-xl);font-weight:700;color:var(--color-dark);margin:var(--sp-2xl) 0 var(--sp-lg);padding-bottom:var(--sp-sm);border-bottom:2px solid var(--color-primary);scroll-margin-top:calc(var(--header-h) + 16px)}
+.terms__article{font-size:var(--fs-base);font-weight:700;color:var(--color-primary-dark);margin:var(--sp-xl) 0 var(--sp-sm)}
+.terms p{margin-bottom:var(--sp-md)}
+.terms__list{margin:0 0 var(--sp-md);padding-left:1.6em}
+.terms__list>li{margin-bottom:var(--sp-md)}
+.terms__sublist{list-style:decimal;margin:var(--sp-sm) 0;padding-left:1.6em}
+.terms__sublist>li{margin-bottom:var(--sp-xs)}
+.terms__note{display:block;margin-top:var(--sp-xs);font-size:var(--fs-xs);color:var(--color-text-light)}
+.terms__formula{display:inline-block;margin-top:var(--sp-xs);padding:var(--sp-sm) var(--sp-md);background:var(--color-bg-alt);border-radius:6px;font-weight:500}
+.terms__date{margin-top:var(--sp-xl);color:var(--color-text-light)}
+.terms .table-wrap{margin:var(--sp-md) 0}
+.terms .comparison-table th{width:auto;white-space:normal;text-align:left}
