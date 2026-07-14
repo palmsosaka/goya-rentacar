@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=28">
+  <link rel="stylesheet" href="css/style.css?v=29">
   <script src="https://unpkg.com/lucide@0.460.0"></script>
 </head>
 <body>
@@ -82,9 +82,32 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero__slides">
-      <div class="hero__slide is-active" style="background-image:url('images/senaga30.png')"></div>
-      <div class="hero__slide" style="background-image:url('images/delica-campaign.png')"></div>
-      <div class="hero__slide" style="background-image:url('images/blueseal.png')"></div>
+      <!-- 表示順: 瀬長島 → デリカ → ブルーシール -->
+      <!-- スマホ(〜767px)は縦構図の専用画像、768px以上は横構図に出し分ける -->
+      <div class="hero__slide is-active">
+        <picture>
+          <source media="(max-width:767px)" type="image/webp"
+                  srcset="images/hero/senaga-mobile-1080.webp 1080w, images/hero/senaga-mobile-1536.webp 1536w" sizes="100vw">
+          <source type="image/webp" srcset="images/hero/senaga-desktop-1600.webp 1600w" sizes="100vw">
+          <img src="images/hero/senaga-desktop-1600.webp" alt="那覇空港に到着して、最短30分で瀬長島へ。沖縄旅のスタートを、もっとスムーズに。※所要時間は交通状況により変動いたします" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+      <div class="hero__slide">
+        <picture>
+          <source media="(max-width:767px)" type="image/webp"
+                  srcset="images/hero/delica-mobile-1080.webp 1080w, images/hero/delica-mobile-1536.webp 1536w" sizes="100vw">
+          <source type="image/webp" srcset="images/hero/delica-desktop-1600.webp 1600w, images/hero/delica-desktop-2400.webp 2400w" sizes="100vw">
+          <img src="images/hero/delica-desktop-1600.webp" alt="7月・8月限定の特別プライス。新型デリカが1日10,000円。ご予約時、WEB予約フォームの備考欄に「7・8月限定デリカキャンペーン希望」とご入力ください。入力がない場合は通常料金となります" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="hero__slide">
+        <picture>
+          <source media="(max-width:767px)" type="image/webp"
+                  srcset="images/hero/blueseal-mobile-1080.webp 1080w, images/hero/blueseal-mobile-1536.webp 1536w" sizes="100vw">
+          <source type="image/webp" srcset="images/hero/blueseal-desktop-1600.webp 1600w, images/hero/blueseal-desktop-2400.webp 2400w" sizes="100vw">
+          <img src="images/hero/blueseal-desktop-1600.webp" alt="お子さまにブルーシールアイスを1つプレゼント" loading="lazy" decoding="async">
+        </picture>
+      </div>
     </div>
     <div class="hero__overlay"></div>
     <h1 class="hero__catch">那覇空港送迎・最短0分出発の沖縄レンタカー</h1>
