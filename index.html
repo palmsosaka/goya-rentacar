@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=27">
+  <link rel="stylesheet" href="css/style.css?v=28">
   <script src="https://unpkg.com/lucide@0.460.0"></script>
 </head>
 <body>
@@ -92,9 +92,12 @@
 
   <div class="hero-cta-bar">
     <div class="container">
-      <div class="hero__cta">
-        <a href="#reservation" class="btn btn--web btn--lg" data-ga-event="hero_reservation_click"><img src="assets/img/icon_web.png" alt="" class="btn__icon">今すぐ予約</a>
-        <a href="https://line.me/R/ti/p/@228tryuy" class="btn btn--line btn--lg" data-ga-event="hero_line_click"><img src="assets/img/icon_line.png" alt="" class="btn__icon">LINEで相談</a>
+      <div class="hero-cta-bar__inner">
+        <p class="hero-cta-bar__price">軽自動車 <strong>1,350円〜</strong><small>/日</small></p>
+        <div class="hero__cta">
+          <a href="./#reservation" class="btn btn--web btn--lg" data-ga-event="hero_reservation_click"><img src="assets/img/icon_web.png" alt="" class="btn__icon">今すぐ予約</a>
+          <a href="https://line.me/R/ti/p/@228tryuy" class="btn btn--line btn--lg" data-ga-event="hero_line_click"><img src="assets/img/icon_line.png" alt="" class="btn__icon">LINEで相談</a>
+        </div>
       </div>
     </div>
   </div>
@@ -106,7 +109,7 @@
         <div class="section__header">
           <h2 class="section__title">お知らせ</h2>
         </div>
-        <ul class="news-list" id="news-list">
+        <ul class="news-list news-list--center" id="news-list">
           <li class="news-list__item"><div class="news-list__meta"><span class="news-list__date">2026.07.06</span><span class="news-list__category">お知らせ</span></div><p class="news-list__title">ホームページをリニューアルしました</p></li>
           <li class="news-list__item"><div class="news-list__meta"><span class="news-list__date">2026.07.01</span><span class="news-list__category">営業</span></div><p class="news-list__title">7月の営業日についてご案内いたします</p></li>
           <li class="news-list__item"><div class="news-list__meta"><span class="news-list__date">2026.06.15</span><span class="news-list__category">予約</span></div><p class="news-list__title">夏休み期間の予約受付を開始しました</p></li>
@@ -121,7 +124,6 @@
       <div class="container">
         <div class="section__header">
           <h2 class="section__title">おすすめ車種</h2>
-          <p class="section__subtitle">用途に合わせてお選びいただけます</p>
         </div>
         <div class="cards-grid cards-grid--3">
           <div class="card animate-on-scroll">
@@ -161,7 +163,7 @@
       <div class="container container--narrow">
         <div class="section__header">
           <h2 class="section__title">送迎の流れ</h2>
-          <p class="section__subtitle">到着から出発まで、スムーズな流れ</p>
+          <p class="section__subtitle">到着から出発まで、スムーズな流れを心がけます</p>
         </div>
         <div class="flow">
           <div class="flow__step">
@@ -189,64 +191,39 @@
             <div class="flow__number">4</div>
             <div class="flow__content">
               <h3 class="flow__title">出発</h3>
-              <p class="flow__text">最短0分で出発できる体制。沖縄の旅をすぐスタートできます。</p>
+              <p class="flow__text">最短で出発できる体制。沖縄の旅をすぐスタートできます。</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Insurance Plans -->
+    <!-- Reasons -->
     <section class="section section--alt">
       <div class="container">
         <div class="section__header">
-          <h2 class="section__title">補償プラン</h2>
-          <p class="section__subtitle">お客様のスタイルに合わせて選べます</p>
+          <h2 class="section__title">ゴーヤレンタカーを選ぶ3つの理由</h2>
         </div>
         <div class="cards-grid cards-grid--3">
-          <div class="plan-card animate-on-scroll">
-            <div class="plan-card__header">
-              <div class="plan-card__name">スタンダード</div>
-            </div>
-            <div class="plan-card__body">
-              <ul class="plan-card__features">
-                <li>対人・対物：無制限</li>
-                <li>車両補償：あり</li>
-                <li>免責額：5万円</li>
-                <li>NOC：あり</li>
-              </ul>
-            </div>
+          <div class="card strength-card animate-on-scroll">
+            <div class="strength-card__icon"><i data-lucide="zap"></i></div>
+            <h3 class="strength-card__title">那覇空港から最短0分出発</h3>
+            <p class="strength-card__text">送迎オペの統制で待ち時間を最小化。到着連絡から送迎車・手続きまでスムーズです。</p>
+            <p style="margin-top:var(--sp-md)"><a href="pickup.html" class="btn btn--ghost btn--sm">送迎の詳細を見る</a></p>
           </div>
-          <div class="plan-card plan-card--recommended animate-on-scroll">
-            <div class="plan-card__badge">おすすめ</div>
-            <div class="plan-card__header">
-              <div class="plan-card__name">フルカバー</div>
-            </div>
-            <div class="plan-card__body">
-              <ul class="plan-card__features">
-                <li>対人・対物：無制限</li>
-                <li>車両補償：あり</li>
-                <li>免責額：0円</li>
-                <li>NOC：免除</li>
-              </ul>
-            </div>
+          <div class="card strength-card animate-on-scroll">
+            <div class="strength-card__icon"><i data-lucide="award"></i></div>
+            <h3 class="strength-card__title">沖縄17年の実績</h3>
+            <p class="strength-card__text">地元で17年。観光もビジネスも、沖縄の道を知り尽くしたスタッフが安心サポートします。</p>
+            <p style="margin-top:var(--sp-md)"><a href="strengths.html" class="btn btn--ghost btn--sm">強みの詳細を見る</a></p>
           </div>
-          <div class="plan-card animate-on-scroll">
-            <div class="plan-card__header">
-              <div class="plan-card__name">エコノミー</div>
-            </div>
-            <div class="plan-card__body">
-              <ul class="plan-card__features">
-                <li>対人・対物：無制限</li>
-                <li>車両補償：あり</li>
-                <li>免責額：10万円</li>
-                <li>NOC：あり</li>
-              </ul>
-            </div>
+          <div class="card strength-card animate-on-scroll">
+            <div class="strength-card__icon"><i data-lucide="receipt"></i></div>
+            <h3 class="strength-card__title">総額が事前に分かる明朗会計</h3>
+            <p class="strength-card__text">基本料金+補償+オプションを事前にご案内。追加費用の不安はありません。</p>
+            <p style="margin-top:var(--sp-md)"><a href="insurance.html" class="btn btn--ghost btn--sm">補償プラン詳細</a></p>
           </div>
         </div>
-        <p class="text-center" style="margin-top:var(--sp-md);color:var(--color-text-light);font-size:var(--fs-sm)">※料金はご利用車種・期間により異なります。お気軽にお問い合わせください。</p>
-        <p class="text-center" style="margin-top:var(--sp-md)"><a href="insurance.html" class="btn btn--ghost">補償プラン詳細</a></p>
       </div>
     </section>
 
