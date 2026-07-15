@@ -270,7 +270,16 @@ table{border-collapse:collapse}
 .footer__logo{display:flex;align-items:center;gap:8px;margin-bottom:var(--sp-sm)}
 .footer__logo-img{height:120px;width:auto}
 @media(min-width:768px){.footer__logo-img{height:160px}}
-.footer__desc{font-size:var(--fs-sm);line-height:1.7;color:var(--color-text-light)}
+/* 「おかげさまで設立16年」に金色の光がゆっくり流れるシャイン演出。
+   地色は落ち着いた茶のまま、細い金の帯が周期的に横切る(background-clip:text)。 */
+.footer__desc{font-size:var(--fs-sm);line-height:1.7;font-weight:500;
+  background:linear-gradient(100deg,#7A6148 0%,#7A6148 40%,#E8862A 48%,#FFD54F 50%,#E8862A 52%,#7A6148 60%,#7A6148 100%);
+  background-size:280% 100%;background-position:130% 0;
+  -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+  animation:footer-shine 5s ease-in-out 1.2s infinite}
+@keyframes footer-shine{0%{background-position:130% 0}55%,100%{background-position:-30% 0}}
+@media(prefers-reduced-motion:reduce){
+  .footer__desc{animation:none;background:none;color:var(--color-text-light);-webkit-text-fill-color:currentColor}}
 .footer__nav{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--sp-md) var(--sp-lg)}
 .footer__nav a{font-size:var(--fs-sm);font-weight:500;color:var(--color-text);transition:color .2s;position:relative}
 .footer__nav a:hover{color:var(--color-primary)}
