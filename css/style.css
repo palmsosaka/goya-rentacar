@@ -293,7 +293,8 @@ table{border-collapse:collapse}
 .footer__bottom{border-top:1px solid rgba(200,182,160,.4);padding:var(--sp-lg) 0;text-align:center;font-size:var(--fs-xs);color:var(--color-text-light)}
 @media(min-width:768px){
   .footer__main{flex-direction:row;justify-content:space-between;text-align:left;align-items:center}
-  .footer__brand{align-items:flex-start}
+  /* PCでもロゴと「おかげさまで設立16年」を互いの中心で揃える(左揃えだと幅の差で中心がズレるため) */
+  .footer__brand{align-items:center;text-align:center}
   .footer__nav{justify-content:flex-start}
   .footer__contact{align-items:flex-end}
 }
