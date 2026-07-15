@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=32">
+  <link rel="stylesheet" href="css/style.css?v=35">
   <script src="https://unpkg.com/lucide@0.460.0"></script>
 </head>
 <body>
@@ -86,7 +86,13 @@
       <!-- 表示順: 瀬長島 → デリカ → ブルーシール -->
       <!-- スマホ(〜767px)は縦構図の専用画像、768px以上は横構図に出し分ける -->
       <div class="hero__slide is-active">
-        <picture>
+        <picture class="hero__fill" aria-hidden="true">
+          <source media="(max-width:767px)" type="image/webp"
+                  srcset="images/hero/senaga-mobile-1080.webp 1080w, images/hero/senaga-mobile-1536.webp 1536w" sizes="100vw">
+          <source type="image/webp" srcset="images/hero/senaga-desktop-1600.webp 1600w" sizes="100vw">
+          <img aria-hidden="true" src="images/hero/senaga-desktop-1600.webp" alt="" decoding="async">
+        </picture>
+        <picture class="hero__pic">
           <source media="(max-width:767px)" type="image/webp"
                   srcset="images/hero/senaga-mobile-1080.webp 1080w, images/hero/senaga-mobile-1536.webp 1536w" sizes="100vw">
           <source type="image/webp" srcset="images/hero/senaga-desktop-1600.webp 1600w" sizes="100vw">
@@ -94,7 +100,13 @@
         </picture>
       </div>
       <div class="hero__slide">
-        <picture>
+        <picture class="hero__fill" aria-hidden="true">
+          <source media="(max-width:767px)" type="image/webp"
+                  srcset="images/hero/delica-mobile-1080.webp 1080w, images/hero/delica-mobile-1536.webp 1536w" sizes="100vw">
+          <source type="image/webp" srcset="images/hero/delica-desktop-1600.webp 1600w, images/hero/delica-desktop-2400.webp 2400w" sizes="100vw">
+          <img aria-hidden="true" src="images/hero/delica-desktop-1600.webp" alt="" loading="lazy" decoding="async">
+        </picture>
+        <picture class="hero__pic">
           <source media="(max-width:767px)" type="image/webp"
                   srcset="images/hero/delica-mobile-1080.webp 1080w, images/hero/delica-mobile-1536.webp 1536w" sizes="100vw">
           <source type="image/webp" srcset="images/hero/delica-desktop-1600.webp 1600w, images/hero/delica-desktop-2400.webp 2400w" sizes="100vw">
@@ -102,7 +114,13 @@
         </picture>
       </div>
       <div class="hero__slide">
-        <picture>
+        <picture class="hero__fill" aria-hidden="true">
+          <source media="(max-width:767px)" type="image/webp"
+                  srcset="images/hero/blueseal-mobile-1080.webp 1080w, images/hero/blueseal-mobile-1536.webp 1536w" sizes="100vw">
+          <source type="image/webp" srcset="images/hero/blueseal-desktop-1600.webp 1600w, images/hero/blueseal-desktop-2400.webp 2400w" sizes="100vw">
+          <img aria-hidden="true" src="images/hero/blueseal-desktop-1600.webp" alt="" loading="lazy" decoding="async">
+        </picture>
+        <picture class="hero__pic">
           <source media="(max-width:767px)" type="image/webp"
                   srcset="images/hero/blueseal-mobile-1080.webp 1080w, images/hero/blueseal-mobile-1536.webp 1536w" sizes="100vw">
           <source type="image/webp" srcset="images/hero/blueseal-desktop-1600.webp 1600w, images/hero/blueseal-desktop-2400.webp 2400w" sizes="100vw">
